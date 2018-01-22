@@ -12,103 +12,119 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+          <ul class="main-nav-list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a>Фотографии</a>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-      <p class="page-main__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <header class="main-header">
+        <h1 class="main-header__title">Фотографии пользователей</h1>
+        <p class="main-header__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </header>
       <section class="photo">
         <ul class="photo__list">
           <li class="photo__item photo__item--today">
             <img class="photo__img--today" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <span class="photo__name">Анна</span>
+            <span class="photo__time">(5 минут назад)</span>
+            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="photo__like"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">215</span>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <img class="photo__img" src="" alt="фотография машины">
+            <span class="photo__name">Левон</span>
+            <span class="photo__time">(5 часов назад)</span>
+            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <span class="photo__like"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">356</span>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <img class="photo__img" src="" alt="ударная установка">
+            <span class="photo__name">Антон</span>
+            <span class="photo__time">(12 часов назад)</span>
+            <p class="photo__comment"><Соседи будут рады!/p>
+            <span class="photo__like"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">666</span>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <img class="photo__img" src="" alt="небо через стеклянную крышу">
+            <span class="photo__name">Борис</span>
+            <span class="photo__time">(20 часов назад)</span>
+            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <span class="photo__like"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">215</span>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <img class="photo__img" src="" alt="рынок фруктов">
+            <span class="photo__name">Сергей</span>
+            <span class="photo__time">(25 часов назад)</span>
+            <p class="photo__comment">Самая кубанская в мире!</p>
+            <span class="photo__like"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">4</span>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <img class="photo__img" src="" alt="сидя на горе">
+            <span class="photo__name">Максим</span>
+            <span class="photo__time">(40 часов назад)</span>
+            <p class="photo__comment">Где снег-то?</p>
+            <span class="photo__like"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">150</span>
           </li>
           <li class="photo__item">
-            <img class="photo__img" src="" alt="">
-            <b class="photo__name"></b>
-            <p class="photo__time"></p>
-            <p class="photo__comment"></p>
-            <p class="photo__likes"></p>
+            <img class="photo__img" src="" alt="крыло самолета в лучах солнца">
+            <span class="photo__name">Надежда</span>
+            <span class="photo__time">(45 часов назад)</span>
+            <p class="photo__comment">Всем GM и взаимные лайки!</p>
+            <span class="photo__likes"></span>
+            <span class="photo__like-text">Нравится:</span>
+            <span class="photo__like-number">2560</span>
           </li>
         </ul>
-        <p class="photo__comment">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photo__appeal">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
-      <section class="edit">
+      <form class="retouch">
         <h2 class="visually-hidden">Редактор фотографий</h2>
-        <img class="edit__photo" src="" alt="">
-        <div class="edit__redactor redactor">
-          <ul class="redactor__list">
-            <li class="redactor__item">
+        <img class="retouch__photo" src="" alt="">
+        <div class="retouch__redactor">
+          <ul class="retouch__list">
+            <li class="retouch__item">
               <img src="" alt="обрезка фотографии">
               <input type="range" name="pruning" value="">
             </li>
-            <li class="redactor__item">
+            <li class="retouch__item">
               <img src="" alt="заливка цветом">
               <input type="range" name="filling" value="">
             </li>
-            <li class="redactor__item">
+            <li class="retouch__item">
               <img src="" alt="контрастность">
               <input type="range" name="contrast" value="">
             </li>
           </ul>
         </div>
-        <button class="edit__post" type="button" name="post">Запостить</button>
-        <button class="edit__cancel" type="reset" name="cancel">Отмена</button>
-      </section>
-    </main>  
+        <button class="button button__post" type="submit" name="post">Запостить</button>
+        <button class="button button__cancel" type="reset" name="cancel">Отмена</button>
+      </form>
+    </main>
     <footer class="page-footer">
       <a class="page-footer__logo-link" href="index.html">
         <img class="page-footer__logo-image" src="img/logotype-mobile.svg" width="76" height="31" alt="Pink">
