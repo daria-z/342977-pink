@@ -2,10 +2,17 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/download.scss";
-@import "blocks/advantages.scss";
-@import "blocks/reviews.scss";
-@import "blocks/price.scss";
-@import "blocks/contacts.scss";
+@import "blocks/page-header/page-header.scss";
+@import "blocks/main-nav/main-nav.scss";
+@import "blocks/download/download.scss";
+@import "blocks/advantages/advantages.scss";
+@import "blocks/reviews/reviews.scss";
+@import "blocks/price/price.scss";
+@import "blocks/contacts/contacts.scss";
+@import "blocks/header-main/header-main.scss";
+@import "blocks/form/form.scss";
+@import "blocks/modal/modal.scss";
+@import "blocks/page-footer/page-footer.scss";
+@import "blocks/social/social.scss";
+@import "blocks/photo/photo.scss";
+@import "blocks/retouch/retouch.scss";

@@ -1,0 +1,19 @@
+.retouch {
+  background-color: $color-background-dark;
+}
+
+.retouch__redactor {
+  border-bottom: 2px solid #dddfe0;
+}
+
+.retouch__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.retouch__item {
+  display: flex;
+  flex-direction: column;
+}

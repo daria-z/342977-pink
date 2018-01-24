@@ -1,0 +1,75 @@
+.form {
+  font-family: $font;
+  background-color: $color-background-light;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  &:nth-child(even) {
+    background-color: $color-background-dark;
+  }
+}
+
+.form__legend {
+  @include text-style-base(14px, 400, 18px, $color-brand);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__item-text {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+.form__item-checkbox {
+  margin: 0;
+}
+
+.form__item-radio {
+  margin: 0;
+}
+
+.form__item-textarea {
+  margin: 0;
+}
+
+.form__label-text {
+  padding-left: 20px;
+  @include text-style-base(14px, 400, 30px, $color-brand);
+  text-transform: uppercase;
+}
+
+.form__label-radio,
+.form__label-checkbox {
+  @include text-style-base(18px, 400, 30px, $color-text-base);
+}
+
+.form__input-text {
+  margin: 0;
+  padding: 10px 15px;
+  border: 2px solid #e5e5e5;
+  font-family: $font;
+  @include text-style-base(14px, 400, 30px, $color-text-base);
+  background-color: $color-background-light;
+  &::placeholder {
+    color: $color-text-base;
+  }
+}
+
+.form__input-textarea {
+  padding: 10px 15px;
+  border: 2px solid #e5e5e5;
+  font-family: $font;
+  @include text-style-base(14px, 400, 30px, $color-text-base);
+  background-color: $color-background-light;
+  &::placeholder {
+    color: $color-text-base;
+  }
+}
+
+.form__clarification {
+  margin: 0;
+}
