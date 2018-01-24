@@ -1,0 +1,25 @@
+.advantages {
+  font-family: $font;
+  background-color: $color-background-light;
+}
+
+.advantages__text {
+  margin: 0;
+  @include text-style-base(24px, 300, 1.2, $color-secondary);
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $color-background-dark;
+}
+
+.advantages__item-title {
+  margin: 0;
+  @include text-style-base(18px, 700, 24px, #000000);
+}
+.advantages__item-description {
+  margin: 0;
+  @include text-style-base(14px, 400, 24px, $color-secondary);
+}

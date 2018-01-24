@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -34,9 +35,11 @@
       <section class="download">
         <h2 class="visually-hidden">Как скачать наше приложение</h2>
         <a class="button download__link" href="#">Скачать приложение</a>
-        <img class="download__store-image download__store-image--apple" src="" alt="App Store">
-        <img class="download__store-image download__store-image--google" src="" alt="Google Play">
-        <img class="download__store-image download__store-image--windows" src="" alt="Windows Market">
+        <div class="download__wrapper-store">
+          <img class="download__store-image download__store-image--apple" src="" alt="App Store">
+          <img class="download__store-image download__store-image--google" src="" alt="Google Play">
+          <img class="download__store-image download__store-image--windows" src="" alt="Windows Market">
+        </div>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
@@ -92,26 +95,31 @@
         <h2 class="visually-hidden">Наши тарифы</h2>
         <div class="price__wrapper">
           <table class="price__list">
-            <tr class="price__rate price__rate--standard">
-              <th class="price__name">Стандарт</th>
-              <th class="price__value">3,99 usd</th>
-              <td class="price__field price__field--included">Розовый фильтр</td>
-              <td class="price__field price__field--included">Смайлики</td>
-              <td class="price__field">Комментарии</td>
-            </tr>
             <tr class="price__rate">
-              <th class="price__name">Стандарт</th>
-              <th class="price__value">3,99 usd</th>
-              <td class="price__field price__field--included">Розовый фильтр</td>
-              <td class="price__field price__field--included">Смайлики</td>
-              <td class="price__field">Комментарии</td>
+              <th class="price__name">Мининум
+                <span class="price__value">3,99 usd</span>
+              </th>
+              <th class="price__name">Стандарт
+                <span class="price__value">3,99 usd</span>
+              </th>
+              <th class="price__name">Максимум
+                <span class="price__value">3,99 usd</span>
+              </th>
             </tr>
-            <tr class="price__rate">
-              <th class="price__name">Стандарт</th>
-              <th class="price__value">3,99 usd</th>
+            <tr class="price__parameter">
+              <td class="price__field">Розовый фильтр</td>
               <td class="price__field price__field--included">Розовый фильтр</td>
+              <td class="price__field price__field--included">Розовый фильтр</td>
+            </tr>
+            <tr class="price__parameter">
+              <td class="price__field">Смайлики</td>
               <td class="price__field price__field--included">Смайлики</td>
+              <td class="price__field price__field--included">Смайлики</td>
+            </tr>
+            <tr class="price__parameter">
               <td class="price__field">Комментарии</td>
+              <td class="price__field">Комментарии</td>
+              <td class="price__field price__field--included">Комментарии</td>
             </tr>
           </table>
           <div class="price__togglest">

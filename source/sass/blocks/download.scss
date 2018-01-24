@@ -1,0 +1,21 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+  @include text-style-base(14px, 300, 24px, #ffffff);
+  background-color: #1d2631;
+}
+
+.download__link {
+  text-decoration: none;
+}
+
+.download__wrapper-store {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__description {
+  margin: 0;
+  text-align: center;
+}

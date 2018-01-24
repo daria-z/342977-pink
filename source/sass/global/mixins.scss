@@ -1,0 +1,20 @@
+@mixin text-style-base($size: 18px, $weight: 400, $line: 24px, $color: #283645) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+
+  line-height: $line;
+  color: $color;
+}
+
+
+@mixin text-style-p($size: 14px, $weight: 400, $line: 30px, $color: #283645) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+
+  line-height: $line;
+  color: $color;
+}
