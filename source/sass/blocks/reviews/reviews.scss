@@ -16,8 +16,8 @@
 }
 
 .reviews__text {
-  margin: 0;
   @include text-style-base(14px, 400, 24px, $color-secondary);
+  margin: 0;
   text-align: center;
 }
 

@@ -3,42 +3,25 @@
   background-color: $color-background-dark;
 }
 
-.price__list {
-
-}
-
-.price__rate {
-
-}
-
-
 .price__name {
+  @include text-style-base(18px, 700, 30px, $color-text-light);
   width: 276px;
   height: 98px;
-  @include text-style-base(18px, 700, 30px, $color-text-light);
   text-transform: uppercase;
   background-color: $color-secondary;
 }
 
 .price__value {
-  display: block;
   @include text-style-base(24px, 300, 30px, $color-text-light);
+  display: block;
   text-transform: uppercase;
 }
 
 .price__field {
+  @include text-style-base(18px, 300, 30px, $color-secondary);
   width: 276px;
   height: 59px;
   border: 2px;
-  @include text-style-base(18px, 300, 30px, $color-secondary);
   text-transform: uppercase;
   background-color: $color-background-light;
-}
-
-.price__included {
-
-}
-
-.price__unincluded {
-
 }

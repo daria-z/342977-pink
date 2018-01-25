@@ -3,9 +3,9 @@
 }
 
 .header-main__title {
+  @include text-style-base(24px, 300, 1.2, $color-text-light);
   margin: 0;
   height: 237px;
-  @include text-style-base(24px, 300, 1.2, $color-text-light);
   text-align: center;
   background-image: url("../sass/blocks/header-main/bg-back-mobile@1x.jpg");
   background-position: top;
@@ -14,9 +14,9 @@
 }
 
 .header-main__description {
+  @include text-style-base(14px, 400, 30px, $color-text-base);
   margin: 0;
   min-height: 184px;
-  @include text-style-base(14px, 400, 30px, $color-text-base);
   background-color: $color-background-light;
   text-align: center;
 }

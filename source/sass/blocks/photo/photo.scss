@@ -25,13 +25,13 @@
 }
 
 .photo__comment {
-  margin: 0;
   @include text-style-base(14px, 400, 24px, $color-text-base);
+  margin: 0;
 }
 
 .photo__like-text {
-    @include text-style-base(14px, 400, 24px, $color-brand);
-    text-transform: uppercase;
+  @include text-style-base(14px, 400, 24px, $color-brand);
+  text-transform: uppercase;
 }
 
 .photo__like-number {

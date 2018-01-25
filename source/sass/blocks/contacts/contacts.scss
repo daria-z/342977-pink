@@ -4,8 +4,8 @@
 }
 
 .contacts__text {
-  margin: 0;
   @include text-style-base(24px, 300, 1.2, $color-secondary);
+  margin: 0;
   text-align: center;
 }
 
@@ -23,29 +23,29 @@
 }
 
 .contacts__title {
-  margin: 0;
   @include text-style-base(18px, 700, 1.2, #000000);
+  margin: 0;
   font-style: normal;
   text-align: center;
 }
 
 .contacts__tel {
-  margin: 0;
   @include text-style-base(24px, 300, 1.2, $color-brand);
+  margin: 0;
   font-style: normal;
   text-decoration: none;
 }
 
 .contacts__email {
-  margin: 0;
   @include text-style-base(24px, 300, 1.2, $color-brand);
+  margin: 0;
   font-style: normal;
   text-decoration: none;
 }
 
 .contrasts__location {
-  margin: 0;
   @include text-style-base(24px, 300, 1.2, $color-brand);
+  margin: 0;
   font-style: normal;
   text-decoration: none;
 }

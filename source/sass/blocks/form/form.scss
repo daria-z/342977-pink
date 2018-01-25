@@ -37,8 +37,8 @@
 }
 
 .form__label-text {
-  padding-left: 20px;
   @include text-style-base(14px, 400, 30px, $color-brand);
+  padding-left: 20px;
   text-transform: uppercase;
 }
 
@@ -48,11 +48,11 @@
 }
 
 .form__input-text {
+  @include text-style-base(14px, 400, 30px, $color-text-base);
   margin: 0;
   padding: 10px 15px;
   border: 2px solid #e5e5e5;
   font-family: $font;
-  @include text-style-base(14px, 400, 30px, $color-text-base);
   background-color: $color-background-light;
   &::placeholder {
     color: $color-text-base;
@@ -60,10 +60,10 @@
 }
 
 .form__input-textarea {
+  @include text-style-base(14px, 400, 30px, $color-text-base);
   padding: 10px 15px;
   border: 2px solid #e5e5e5;
   font-family: $font;
-  @include text-style-base(14px, 400, 30px, $color-text-base);
   background-color: $color-background-light;
   &::placeholder {
     color: $color-text-base;
