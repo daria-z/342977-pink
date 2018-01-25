@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   border: none;
+
   &:nth-child(even) {
     background-color: $color-background-dark;
   }
@@ -54,6 +55,7 @@
   border: 2px solid #e5e5e5;
   font-family: $font;
   background-color: $color-background-light;
+
   &::placeholder {
     color: $color-text-base;
   }
@@ -65,6 +67,7 @@
   border: 2px solid #e5e5e5;
   font-family: $font;
   background-color: $color-background-light;
+
   &::placeholder {
     color: $color-text-base;
   }
