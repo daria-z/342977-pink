@@ -1,5 +1,5 @@
 .reviews {
-  font-family: $font;
+  font-family: $font-base;
 }
 
 .reviews__list {
@@ -16,7 +16,7 @@
 }
 
 .reviews__text {
-  @include text-style-base(14px, 400, 24px, $color-secondary);
+  @include text-style-base(14px, 400, 24px, $color-text-base);
   margin: 0;
   text-align: center;
 }

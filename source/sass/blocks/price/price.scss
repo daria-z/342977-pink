@@ -1,5 +1,5 @@
 .price {
-  font-family: $font;
+  font-family: $font-base;
   background-color: $color-background-dark;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .price__field {
-  @include text-style-base(18px, 300, 30px, $color-secondary);
+  @include text-style-base(18px, 300, 30px, $color-text-base);
   width: 276px;
   height: 59px;
   border: 2px;

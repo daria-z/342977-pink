@@ -1,6 +1,6 @@
 .main-nav {
-  @include text-style-base(18px, 700, 32px, #ffffff);
-  font-family: $font;
+  @include text-style-base(18px, 700, 32px, $color-text-light);
+  font-family: $font-base;
 }
 
 .main-nav-list {
@@ -19,7 +19,7 @@
 }
 
 .main-nav__link {
-  @include text-style-base(18px, 700, 32px, #ffffff);
+  @include text-style-base(18px, 700, 32px, $color-text-light);
   text-transform: uppercase;
   text-decoration: none;
 

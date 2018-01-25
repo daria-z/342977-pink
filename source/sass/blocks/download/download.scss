@@ -2,7 +2,7 @@
   @include text-style-base(14px, 300, 24px, #ffffff);
   display: flex;
   flex-direction: column;
-  font-family: $font;
+  font-family: $font-base;
   background-color: #1d2631;
 }
 
