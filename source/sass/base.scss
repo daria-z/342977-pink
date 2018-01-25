@@ -1,6 +1,3 @@
-@import "global/variables.scss";
-@import "global/mixins.scss";
-
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -12,27 +9,4 @@
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid #ffffff;
-  border-radius: 40px;
-  font-family: $font;
-  @include text-style-base(18px, 700, 18px, $color-text-light);
-  text-align: center;
-  vertical-align: middle;
-  background-color: transparent;
-}
-
-.form-button {
-  padding: 0;
-  border: none;
-  border-radius: 2px;
-  font-family: $font;
-  @include text-style-base(18px, 700, 30px, $color-text-light);
-  text-transform: uppercase;
-  background-color: $color-btn-form;
 }
