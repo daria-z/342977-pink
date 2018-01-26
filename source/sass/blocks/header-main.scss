@@ -1,0 +1,22 @@
+.header-main {
+  font-family: $font-base;
+}
+
+.header-main__title {
+  @include text-style-base(24px, 300, 1.2, $color-text-light);
+  margin: 0;
+  min-height: 237px;
+  text-align: center;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #2b3849;
+}
+
+.header-main__description {
+  @include text-style-base(14px, 400, 30px, $color-text-base);
+  margin: 0;
+  min-height: 184px;
+  background-color: $color-background-light;
+  text-align: center;
+}

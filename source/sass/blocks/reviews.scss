@@ -1,0 +1,28 @@
+.reviews {
+  font-family: $font-base;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__block {
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: $color-background-light;
+}
+
+.reviews__text {
+  @include text-style-base(14px, 400, 24px, $color-text-base);
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__name {
+  @include text-style-base(18px, 700, 24px, $color-text-black);
+  font-style: normal;
+  text-align: center;
+}

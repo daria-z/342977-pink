@@ -1,0 +1,33 @@
+.download {
+  @include text-style-base(14px, 300, 24px, $color-text-light);
+  display: flex;
+  flex-direction: column;
+  font-family: $font-base;
+  background-color: #1d2631;
+}
+
+.download__preview {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #1d2631;
+}
+
+.download__link {
+  width: 277px;
+  height: 51px;
+  text-decoration: none;
+}
+
+.download__wrapper-store {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 210px;
+  height: 56px;
+}
+
+.download__description {
+  margin: 0;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.page-footer {
+  font-family: $font-base;
+  background-color: $color-background-light;
+}
+
+.page-footer__logo-link {
+  width: 147px;
+  height: 40px;
+}
+
+.page-footer__developed {
+  @include text-style-base(14px, 400, 18px, $color-text-base);
+}

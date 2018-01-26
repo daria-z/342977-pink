@@ -1,0 +1,27 @@
+.price {
+  font-family: $font-base;
+  background-color: $color-background-dark;
+}
+
+.price__name {
+  @include text-style-base(18px, 700, 30px, $color-text-light);
+  width: 276px;
+  height: 98px;
+  text-transform: uppercase;
+  background-color: $color-secondary;
+}
+
+.price__value {
+  @include text-style-base(24px, 300, 30px, $color-text-light);
+  display: block;
+  text-transform: uppercase;
+}
+
+.price__field {
+  @include text-style-base(18px, 300, 30px, $color-text-base);
+  width: 276px;
+  height: 59px;
+  border: 2px;
+  text-transform: uppercase;
+  background-color: $color-background-light;
+}

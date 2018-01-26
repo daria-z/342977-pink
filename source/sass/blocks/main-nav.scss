@@ -1,0 +1,25 @@
+.main-nav {
+  @include text-style-base(18px, 700, 32px, $color-text-light);
+  font-family: $font-base;
+}
+
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  min-height: 63px;
+  text-align: center;
+}
+
+.main-nav__link {
+  @include text-style-base(18px, 700, 32px, $color-text-light);
+  text-transform: uppercase;
+  text-decoration: none;
+}

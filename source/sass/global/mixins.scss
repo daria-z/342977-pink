@@ -1,0 +1,9 @@
+@mixin text-style-base($size: 18px, $weight: 400, $line: 24px, $color: $color-text-base) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+
+  line-height: $line;
+  color: $color;
+}
