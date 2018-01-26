@@ -1,5 +1,5 @@
 .download {
-  @include text-style-base(14px, 300, 24px, #ffffff);
+  @include text-style-base(14px, 300, 24px, $color-text-light);
   display: flex;
   flex-direction: column;
   font-family: $font-base;

@@ -2,8 +2,9 @@
 
 $color-brand:                #d22856;
 $color-secondary:            #283645;
-$color-text-base:            #283645;
+$color-text-base:            $color-secondary;
 $color-text-light:           #ffffff;
+$color-text-black:           #000000;
 $color-background-light:     #ffffff;
 $color-background-dark:      #f2f2f2;
 $color-inactive:             #e9ebec;

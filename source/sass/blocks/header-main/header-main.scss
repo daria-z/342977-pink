@@ -5,7 +5,7 @@
 .header-main__title {
   @include text-style-base(24px, 300, 1.2, $color-text-light);
   margin: 0;
-  height: 237px;
+  min-height: 237px;
   text-align: center;
   background-image: url("../sass/blocks/header-main/bg-back-mobile@1x.jpg");
   background-position: top;
