@@ -7,3 +7,45 @@
   line-height: $line;
   color: $color;
 }
+
+@mixin align-block {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 620px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+    box-sizing: border-box;
+  }
+}
+
+@mixin mobile-align {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+@mixin tablet-align {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 620px;
+  box-sizing: border-box;
+}
+
+@mixin desctop-align {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+  box-sizing: border-box;
+}

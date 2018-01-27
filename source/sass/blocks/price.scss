@@ -1,4 +1,5 @@
 .price {
+  min-height: 471px;
   font-family: $font-base;
   background-color: $color-background-dark;
 }
@@ -11,17 +12,71 @@
   background-color: $color-secondary;
 }
 
+.price__name--hidden {
+  display: none;
+}
+
 .price__value {
   @include text-style-base(24px, 300, 30px, $color-text-light);
   display: block;
   text-transform: uppercase;
 }
 
+.price__parameter-name {
+  display: none;
+}
+
 .price__field {
-  @include text-style-base(18px, 300, 30px, $color-text-base);
   width: 276px;
   height: 59px;
   border: 2px;
-  text-transform: uppercase;
   background-color: $color-background-light;
+}
+
+.price__text {
+  @include text-style-base(18px, 300, 30px, $color-text-base);
+  text-transform: uppercase;
+}
+
+.price__parameter-text {
+  @include text-style-base(18px, 300, 30px, $color-text-base);
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    min-height: 375px;
+  }
+
+  .price__wrapper {
+    @include tablet-align;
+  }
+
+  .price__parameter-name {
+    display: block;
+  }
+
+  .price__field {
+    width: 152px;
+    height: 45px;
+  }
+
+  .price__text {
+    display: none;
+  }
+
+  .price__name--hidden {
+    display: block;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .price {
+    min-height: 524px;
+  }
+
+  .price__wrapper {
+    @include desctop-align;
+  }
 }

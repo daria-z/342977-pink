@@ -1,33 +1,98 @@
 .download {
   @include text-style-base(14px, 300, 24px, $color-text-light);
-  display: flex;
-  flex-direction: column;
   font-family: $font-base;
   background-color: #1d2631;
 }
 
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download__tagline {
+  display: none;
+  margin: 0;
+}
+
 .download__preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 396px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: #1d2631;
 }
 
+.download__preview-img {
+  margin-top: auto;
+}
+
+.download__wrapper-info {
+  @include align-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 271px;
+}
+
 .download__link {
-  width: 277px;
+  width: 267px;
   height: 51px;
   text-decoration: none;
 }
 
-.download__wrapper-store {
+.download__store-list {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   width: 210px;
-  height: 56px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .download__description {
-  margin: 0;
+  margin: 0 20px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .download__wrapper {
+    @include tablet-align;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    min-height: 619px;
+  }
+
+  .download__preview {
+    background-image: none;
+  }
+
+  .download__wrapper-info {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    min-height: 420px;
+  }
+
+  .download__tagline {
+    @include text-style-base(40px, 300, 1.2, $color-text-light);
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .download__wrapper {
+    @include desctop-align;
+    margin-top: -110px;
+    padding-top: 110px;
+    min-height: 854px;
+    box-sizing: border-box;
+  }
 }

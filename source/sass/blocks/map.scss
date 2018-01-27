@@ -1,0 +1,20 @@
+.map {
+  min-height: 198px;
+}
+
+.map__image {
+  min-width: 320px;
+  max-width: 1200px;
+  height: 100%;
+  background-color: #dce6c9;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 261px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  min-height: 504px;
+}
