@@ -15,19 +15,18 @@
   height: 69px;
 }
 
-
 @media (min-width: $tablet-width) {
   .page-header__wrapper-logo {
-    @include tablet-align
+    @include tablet-align;
     height: 109px;
   }
 }
 
 @media (min-width: $desctop-width) {
-.page-header__wrapper {
+  .page-header__wrapper {
+    @include desctop-align;
     flex-direction: row;
     justify-content: space-between;
-    @include desctop-align;
   }
 
   .page-header__wrapper-logo {
