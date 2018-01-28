@@ -125,26 +125,33 @@
         <p class="photo__appeal">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <form class="retouch">
-        <h2 class="visually-hidden">Редактор фотографий</h2>
-        <img class="retouch__photo" src="img/photo-road-mobile@1x.jpg" alt="зимняя дорога">
-        <div class="retouch__redactor">
-          <ul class="retouch__list">
-            <li class="retouch__item">
-              <img src="img/icon-editor-crop.svg" alt="обрезка фотографии">
-              <input type="range" name="pruning" min="" max="">
-            </li>
-            <li class="retouch__item">
-              <img src="img/icon-editor-fill.svg" alt="заливка цветом">
-              <input type="range" name="filling" min="" max="">
-            </li>
-            <li class="retouch__item">
-              <img src="img/icon-editor-contrast.svg" alt="контрастность">
-              <input type="range" name="contrast" min="" max="">
-            </li>
-          </ul>
+        <div class="retouch__wrapper">
+          <h2 class="visually-hidden">Редактор фотографий</h2>
+          <img class="retouch__photo" src="img/photo-road-mobile@1x.jpg" alt="зимняя дорога">
+          <div class="retouch__redactor">
+            <input class="retouch__redactor-btn" type="radio" id="retouch__btn-crop" name="retouch__toggle" checked>
+            <input class="retouch__redactor-btn" type="radio" id="retouch__btn-fill" name="retouch__toggle">
+            <input class="retouch__redactor-btn" type="radio" id="retouch__btn-contrast" name="retouch__toggle">
+            <ul class="retouch__tools">
+              <li class="retouch__item">
+                <label class="retouch__tool retouch__tool--crop" for="retouch__btn-crop"></label>
+                <div class="retouch__range-item"></div>
+              </li>
+              <li class="retouch__item">
+                <label class="retouch__tool retouch__tool--fill" for="retouch__btn-fill"></label>
+                <div class="retouch__range-item"></div>
+              </li>
+              <li class="retouch__item">
+                <label class="retouch__tool retouch__tool--contrast" for="retouch__btn-contrast"></label>
+                <div class="retouch__range-item"></div>
+              </li>
+            </ul>
+            <div class="retouch__buttons">
+              <button class="button button__post" type="submit" name="post">Запостить</button>
+              <button class="button button__cancel" type="reset" name="cancel">Отмена</button>
+            </div>
+          </div>
         </div>
-        <button class="button button__post" type="submit" name="post">Запостить</button>
-        <button class="button button__cancel" type="reset" name="cancel">Отмена</button>
       </form>
     </main>
     <footer class="page-footer">
