@@ -1,7 +1,9 @@
 .page-footer {
   @include align-block;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  min-height: 282px;
   font-family: $font-base;
   background-color: $color-background-light;
 }
@@ -21,6 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    flex-direction: row;
     min-height: 127px;
   }
 
