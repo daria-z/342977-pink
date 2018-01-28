@@ -11,20 +11,20 @@
 @mixin align-block {
   margin: 0 auto;
   padding: 0 20px;
-  width: 280px;
+  width: 320px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     padding: 0 20px;
-    width: 620px;
+    width: 660px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desctop-width) {
     margin: 0 auto;
     padding: 0 10px;
-    width: 940px;
+    width: 960px;
     box-sizing: border-box;
   }
 }
@@ -32,20 +32,20 @@
 @mixin mobile-align {
   margin: 0 auto;
   padding: 0 20px;
-  width: 280px;
+  width: 320px;
   box-sizing: border-box;
 }
 
 @mixin tablet-align {
   margin: 0 auto;
   padding: 0 20px;
-  width: 620px;
+  width: 660px;
   box-sizing: border-box;
 }
 
 @mixin desctop-align {
   margin: 0 auto;
   padding: 0 10px;
-  width: 940px;
+  width: 960px;
   box-sizing: border-box;
 }
