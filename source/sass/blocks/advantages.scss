@@ -67,7 +67,10 @@
     flex-direction: row-reverse;
   }
 
-  .advantages__item-title,
+  .advantages__item-title {
+    text-align: left;
+  }
+
   .advantages__item-description {
     text-align: left;
   }
