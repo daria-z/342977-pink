@@ -1,15 +1,28 @@
 .page-footer {
-  @include align-block;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 282px;
   font-family: $font-base;
   background-color: $color-background-light;
-}
 
-.page-footer--index {
-  display: none;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 197px;
+  }
+
+  &--index {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .page-footer__logo-link {
@@ -19,22 +32,4 @@
 
 .page-footer__developed {
   @include text-style-base(14px, 400, 18px, $color-text-base);
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    flex-direction: row;
-    min-height: 127px;
-  }
-
-  .page-footer--index {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    min-height: 197px;
-  }
 }

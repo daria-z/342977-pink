@@ -8,31 +8,95 @@
 
 .form__wrapper {
   background-color: $color-background-dark;
+
+  @media (min-width: $tablet-width)  {
+    background-color: $color-background-light;
+  }
 }
 
 .form__fieldset {
-  @include mobile-align;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .form__fieldset--name {
   min-height: 275px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 360px;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 380px;
+    order: 1;
+    flex-basis: 435px;
+  }
 }
 
 .form__fieldset--achievements {
   min-height: 605px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 615px;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 615px;
+    order: 4;
+    width: 100%;
+  }
 }
 
 .form__fieldset--contacts {
   min-height: 300px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 380px;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 380px;
+    order: 3;
+    width: 100%;
+  }
 }
 
 .form__fieldset--apps {
   min-height: 340px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 360px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 360px;
+    order: 2;
+    flex-basis: 435px;
+  }
 }
 
 .form__fieldset--impressions {
   min-height: 295px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 355px;
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 355px;
+    order: 5;
+    width: 100%;
+  }
 }
 
 .form__legend {
@@ -103,51 +167,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    order: 6;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form {
     @include tablet-align;
-  }
-
-  .form__wrapper {
-    background-color: $color-background-light;
-  }
-
-  .form__fieldset {
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  .form__fieldset--name {
-    min-height: 360px;
-    order: 1;
-  }
-
-  .form__wrapper--achievements {
-    min-height: 615px;
-    order: 4;
-  }
-
-  .form__fieldset--contacts {
-    min-height: 380px;
-    order: 3;
-  }
-
-  .form__wrapper--apps {
-    min-height: 360px;
-    order: 2;
-  }
-
-  .form__fieldset--impressions {
-    min-height: 355px;
-    order: 5;
-  }
-
-  .form__wrapper-footer {
-    flex-direction: row;
-    order: 6;
   }
 }
 
@@ -155,40 +189,5 @@
   .form {
     @include desktop-align;
     flex-direction: row;
-  }
-
-  .form__fieldset--name {
-    min-height: 380px;
-    order: 1;
-    flex-basis: 435px;
-  }
-
-  .form__wrapper--achievements {
-    min-height: 615px;
-    order: 4;
-    width: 100%;
-  }
-
-  .form__fieldset--contacts {
-    min-height: 380px;
-    order: 3;
-    width: 100%;
-  }
-
-  .form__wrapper--apps {
-    min-height: 360px;
-    order: 2;
-    flex-basis: 435px;
-  }
-
-  .form__fieldset--impressions {
-    min-height: 355px;
-    order: 5;
-    width: 100%;
-  }
-
-  .form__wrapper-footer {
-    flex-direction: row;
-    order: 6;
   }
 }

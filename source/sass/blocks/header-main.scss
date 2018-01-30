@@ -1,15 +1,12 @@
 .header-main {
   display: flex;
   flex-direction: column;
-  margin-top: -68px;
-  min-height: 421px;
   font-family: $font-base;
 }
 
 .header-main__wrapper {
   display: flex;
   width: 100%;
-  min-height: 237px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -22,6 +19,10 @@
   display: inline-block;
   margin: auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(50px, 300, 1.2, $color-text-light);
+  }
 }
 
 .header-main__description {
@@ -29,33 +30,12 @@
   margin: auto;
   background-color: $color-background-light;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(18px, 400, 30px, $color-text-base);
+  }
 }
 
 .header-main__form {
   display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .header-main {
-    margin-top: -110px;
-    min-height: 668px;
-  }
-
-  .header-main__wrapper {
-    min-height: 440px;
-  }
-
-  .header-main__form {
-    display: inline;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header-main {
-    min-height: 633px;
-  }
-
-  .header-main__wrapper {
-    min-height: 393px;
-  }
 }

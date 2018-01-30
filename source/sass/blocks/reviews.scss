@@ -1,63 +1,12 @@
 .reviews {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 355px;
   font-family: $font-base;
-}
 
-.reviews__list {
-  @include align-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.reviews__block {
-  margin: 0;
-  display: flex;
-  flex-direction: column-reverse;
-  background-color: $color-background-light;
-}
-
-.reviews__text {
-  @include text-style-base(14px, 400, 24px, $color-text-base);
-  margin: 0;
-  text-align: center;
-}
-
-.reviews__cite {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.reviews__name {
-  @include text-style-base(18px, 700, 24px, $color-black);
-  font-style: normal;
-  text-align: center;
-}
-
-.reviews__description {
-  @include text-style-base(14px, 400, 30px, $color-text-base);
-  display: none;
-  font-style: normal;
-}
-
-@media (min-width: $tablet-width) {
-  .reviews__block {
-    flex-direction: column;
-  }
-
-  .reviews__description {
-    display: block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .reviews {
-    position: relative;
-
+  @media (min-width: $desktop-width) {
     &::after {
       content: "";
       position: absolute;
@@ -69,12 +18,75 @@
       background-color: $color-background-dark;
     }
   }
+}
 
-  .reviews__list {
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
     margin-top: 160px;
   }
+}
 
-  .reviews__toggles {
+.reviews__block {
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: $color-background-light;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.reviews__text {
+  @include text-style-base(14px, 400, 24px, $color-text-base);
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(18px, 400, 30px, $color-text-base);
+  }
+}
+
+.reviews__cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__name {
+  @include text-style-base(18px, 700, 30px, $color-black);
+  font-style: normal;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(20px, 700, 30px, $color-black);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(24px, 700, 30px, $color-black);
+  }
+}
+
+.reviews__description {
+  @include text-style-base(14px, 400, 30px, $color-text-base);
+  display: none;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(18px, 400, 30px, $color-text-base);
+  }
+}
+
+.reviews__toggles {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

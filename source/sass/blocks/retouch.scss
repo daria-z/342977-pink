@@ -1,15 +1,29 @@
 .retouch {
   background-color: $color-background-dark;
   height: 757px;
+
+  @media (min-width: $desktop-width) {
+    height: 514px;
+    background-color: $color-background-light;
+  }
 }
 
 .retouch__wrapper {
-  @include align-block;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 20px;
   height: 100%;
+
+  @media (min-width: $tablet-width)  {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-background-dark;
+  }
 }
 
 .retouch__redactor {
@@ -18,6 +32,10 @@
   justify-content: space-around;
   align-items: center;
   height: 290px;
+
+  @media (min-width: $tablet-width) {
+    height: 405px;
+  }
 }
 
 .retouch__redactor-btn {
@@ -50,49 +68,17 @@
   &:last-of-type {
     border-bottom: 2px solid #dddfe0;
   }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid #dddfe0;
+  }
 }
 
 .retouch__buttons {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .retouch {
-    height: 511px;
-  }
-
-  .retouch__wrapper {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .retouch__photo {
-    width: 300px;
-    height: 400px;
-  }
-
-  .retouch__redactor {
-    height: 405px;
-  }
-
-  .retouch__range-item {
-    border-bottom: 2px solid #dddfe0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .retouch {
-    height: 514px;
-    background-color: $color-background-light;
-  }
-
-  .retouch__wrapper {
-    background-color: $color-background-dark;
-  }
-
-  .retouch__buttons {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }

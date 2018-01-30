@@ -4,7 +4,6 @@
 }
 
 .advantages__wrapper-text {
-  @include align-block;
   min-height: 217px;
   background-color: $color-background-light;
 }
@@ -13,10 +12,17 @@
   @include text-style-base(24px, 300, 1.2, $color-text-base);
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(40px, 300, 1.2, $color-text-base);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(50px, 300, 1.2, $color-text-base);
+  }
 }
 
 .advantages__wrapper {
-  @include align-block;
   background-color: $color-background-dark;
 }
 
@@ -25,6 +31,13 @@
   flex-direction: column;
   align-items: center;
   min-height: 785px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .advantages__list {
@@ -34,18 +47,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .advantages__item-title {
   @include text-style-base(18px, 700, 24px, $color-black);
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(30px, 700, 30px, $color-black);
+    text-align: center;
+  }
 }
 
 .advantages__item-description {
   @include text-style-base(14px, 400, 24px, $color-text-base);
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(18px, 400, 30px, $color-text-base);
+    text-align: center;
+  }
 }
 
 .advantages__wrapper-image {
@@ -55,43 +90,20 @@
 .advantages__image {
   width: 157px;
   height: 330px;
-}
 
-.advantages__image--pink,
-.advantages__image--friends {
-  display: none;
-}
+  &--pink {
+    display: none;
 
-@media (min-width: $tablet-width) {
-  .advantages__wrapper-list {
-    flex-direction: row-reverse;
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 
-  .advantages__item-title {
-    text-align: left;
-  }
+  &--friends {
+    display: none;
 
-  .advantages__item-description {
-    text-align: left;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__wrapper-list {
-    flex-direction: column-reverse;
-  }
-
-  .advantages__list {
-    flex-direction: row;
-  }
-
-  .advantages__item-title,
-  .advantages__item-description {
-    text-align: center;
-  }
-
-  .advantages__image--pink,
-  .advantages__image--friends {
-    display: block;
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }

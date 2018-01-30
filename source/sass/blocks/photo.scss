@@ -8,10 +8,12 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
-}
 
-.photo__wrapper-best {
-  @include align-block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 }
 
 .photo__img-best {
@@ -24,7 +26,6 @@
 }
 
 .photo__list {
-  @include align-block;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,16 +33,44 @@
   flex-wrap: wrap;
   margin: 0 auto;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .photo__item {
   margin-bottom: 20px;
   background-color: $color-background-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 455px;
+
+    &:not(:nth-of-type(2n+2)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 555px;
+    margin-right: 20px;
+
+    &:nth-of-type(3n+3) {
+      margin-right: 0;
+    }
+  }
 }
 
 .photo__img {
   width: 280px;
   height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .photo__block-text {
@@ -82,50 +111,11 @@
 }
 
 .photo__appeal {
-  @include align-block;
   @include text-style-base(14px, 400, 30px, $color-text-base);
   min-height: 172px;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .photo__item-best {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  .photo__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-
-  .photo__item {
-    width: 300px;
-    height: 455px;
-
-    &:not(:nth-of-type(2n+2)) {
-      margin-right: 20px;
-    }
-  }
-
-  .photo__img {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photo__item {
-    height: 555px;
-    margin-right: 20px;
-
-    &:nth-of-type(3n+3) {
-      margin-right: 0;
-    }
+  @media (min-width: $tablet-width) {
+    @include text-style-base(18px, 400, 30px, $color-text-base);
   }
 }
