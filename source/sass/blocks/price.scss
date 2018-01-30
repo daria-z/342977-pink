@@ -71,12 +71,12 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .price {
     min-height: 524px;
   }
 
   .price__wrapper {
-    @include desctop-align;
+    @include desktop-align;
   }
 }

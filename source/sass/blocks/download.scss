@@ -87,10 +87,9 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .download__wrapper {
-    @include desctop-align;
-    margin-top: -110px;
+    @include desktop-align;
     padding-top: 110px;
     min-height: 854px;
     box-sizing: border-box;

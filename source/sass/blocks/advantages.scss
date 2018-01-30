@@ -37,7 +37,7 @@
 }
 
 .advantages__item-title {
-  @include text-style-base(18px, 700, 24px, $color-text-black);
+  @include text-style-base(18px, 700, 24px, $color-black);
   margin: 0;
   text-align: center;
 }
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .advantages__wrapper-list {
     flex-direction: column-reverse;
   }

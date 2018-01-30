@@ -151,9 +151,9 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .form {
-    @include desctop-align;
+    @include desktop-align;
     flex-direction: row;
   }
 

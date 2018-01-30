@@ -32,7 +32,7 @@
 }
 
 .contacts__title {
-  @include text-style-base(18px, 700, 1.2, $color-text-black);
+  @include text-style-base(18px, 700, 1.2, $color-black);
   margin: 0;
   font-style: normal;
   text-align: center;
@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     min-height: 870px;
   }
