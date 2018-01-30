@@ -14,9 +14,9 @@
 }
 
 .page-header__container {
-  @media (max-width: 959px) {
+  @media (max-width: $desktop-width) {
     padding: 0;
-    min-width: 100%;
+    width: 100%;
   }
 }
 
