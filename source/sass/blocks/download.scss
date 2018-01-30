@@ -2,17 +2,44 @@
   @include text-style-base(14px, 300, 24px, $color-text-light);
   font-family: $font-base;
   background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .download__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 660px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 960px;
+    box-sizing: border-box;
+  }
 }
 
 .download__tagline {
   display: none;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(40px, 300, 1.2, $color-text-light);
+    display: block;
+    text-align: center;
+  }
 }
 
 .download__preview {
@@ -21,23 +48,30 @@
   align-items: center;
   width: 100%;
   min-height: 396px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-color: #1d2631;
+
 }
 
 .download__preview-img {
   margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .download__wrapper-info {
-  @include align-block;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   min-height: 271px;
+  background-color: #1d2631;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    background-color: rgba(#1d2631, 0);
+  }
 }
 
 .download__link {
@@ -62,28 +96,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .download__wrapper {
-    @include tablet-align;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    min-height: 619px;
-  }
 
-  .download__preview {
-    background-image: none;
-  }
-
-  .download__wrapper-info {
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    min-height: 420px;
-  }
 
   .download__tagline {
-    @include text-style-base(40px, 300, 1.2, $color-text-light);
-    display: block;
-    text-align: center;
+
   }
 }
 
@@ -91,7 +107,6 @@
   .download__wrapper {
     @include desktop-align;
     padding-top: 110px;
-    min-height: 854px;
     box-sizing: border-box;
   }
 }

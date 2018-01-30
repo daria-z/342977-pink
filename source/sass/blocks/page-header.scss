@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
 
   &--opened {
-    @media (max-width: 959px) {
+    @media (max-width: $desktop-width) {
       background-color: $color-secondary;
       background-image: none;
     }
@@ -14,7 +14,7 @@
 }
 
 .page-header__container {
-  @media (max-width: $desktop-width) {
+  @media (max-width: 959px) {
     padding: 0;
     min-width: 100%;
   }
@@ -23,6 +23,7 @@
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;

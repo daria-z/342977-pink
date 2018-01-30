@@ -7,27 +7,33 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="31" alt="Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav-list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header page-header--opened">
+      <div class="page-header__container container">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+            <a class="page-header__logo-link" href="index.html">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="31" alt="Pink">
+            </a>
+            <button class="page-header__toggle page-header__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <nav class="page-header__nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item main-nav__item--current">
+                <a class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="page-main">
       <header class="header-main">
