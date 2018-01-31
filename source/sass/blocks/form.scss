@@ -4,6 +4,14 @@
   flex-wrap: wrap;
   font-family: $font-base;
   background-color: $color-background-light;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+    box-sizing: border-box;
+  }
 }
 
 .form__wrapper {
@@ -11,33 +19,6 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-background-light;
-  }
-}
-
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border: none;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  &--name {
-    @media (min-width: $tablet-width) {
-      order: 1;
-    }
-
-    @media (min-width: $desktop-width) {
-      order: 1;
-      flex-basis: 435px;
-    }
   }
 
   &--achievements {
@@ -48,18 +29,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      order: 4;
-      width: 100%;
-    }
-  }
-
-  &--contacts {
-    @media (min-width: $tablet-width) {
-      order: 3;
-    }
-
-    @media (min-width: $desktop-width) {
-      order: 3;
       width: 100%;
     }
   }
@@ -72,8 +41,57 @@
     }
 
     @media (min-width: $desktop-width) {
-      order: 2;
+      flex-shrink: 1;
       flex-basis: 435px;
+    }
+  }
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: none;
+  box-sizing: border-box;
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      order: 1;
+
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+    }
+  }
+
+  &--achievements {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &--apps {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -85,10 +103,11 @@
     }
 
     @media (min-width: $desktop-width) {
-      order: 5;
-      width: 100%;
+
     }
   }
+
+
 }
 
 .form__legend {
