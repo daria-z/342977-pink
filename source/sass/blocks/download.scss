@@ -4,7 +4,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-size: 260px 286px, cover;
   background-position: bottom 270px center, bottom;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-size: auto 547px, cover;
@@ -12,7 +12,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-size: auto 547px, cover;
     background-position: bottom right 50px, bottom;
   }
 }
@@ -40,8 +39,6 @@
   }
 }
 
-
-
 .download__info {
   display: flex;
   flex-direction: column;
@@ -58,11 +55,7 @@
     margin-right: auto;
     width: 300px;
     min-height: 420px;
-    background-color: rgba(#1d2631, 0);
-  }
-
-  @media (min-width: $tablet-width) {
-
+    background-color: transparent;
   }
 }
 
@@ -73,12 +66,13 @@
   @media (min-width: $tablet-width) {
     @include text-style-base(40px, 300, 1.2, $color-text-light);
     display: block;
-    width: 195px;
+    padding: 0 30px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(50px, 300, 1.2, $color-text-light);
+    padding: 0;
   }
 }
 
@@ -108,7 +102,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include text-style-base(18px, 300, 24px, $color-text-light)
+    @include text-style-base(18px, 300, 24px, $color-text-light);
     width: 300px;
   }
 }

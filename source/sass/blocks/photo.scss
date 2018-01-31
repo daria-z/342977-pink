@@ -22,6 +22,7 @@
 }
 
 .photo__block-best {
+  padding: 23px 17px;
   background-color: $color-background-dark;
 }
 
@@ -32,11 +33,16 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: -20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -54px;
   }
 }
 
@@ -46,7 +52,6 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    height: 455px;
 
     &:not(:nth-of-type(2n+2)) {
       margin-right: 20px;
@@ -54,8 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 555px;
     margin-right: 20px;
+    margin-bottom: 54px;
 
     &:nth-of-type(3n+3) {
       margin-right: 0;
@@ -75,13 +80,22 @@
 
 .photo__block-text {
   display: flex;
+  justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
+  padding: 23px 17px;
+  min-height: 143px;
   background-color: $color-background-dark;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+  }
 }
 
 .photo__name {
   @include text-style-base(14px, 700, 24px, $color-text-base);
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .photo__time {
@@ -91,11 +105,13 @@
 
 .photo__comment {
   @include text-style-base(14px, 400, 24px, $color-text-base);
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: auto;
   width: 100%;
 }
 
 .photo__like {
+  margin-right: 20px;
   min-width: 13px;
   height: 12px;
   background-color: $color-brand;
@@ -103,6 +119,7 @@
 
 .photo__like-text {
   @include text-style-base(14px, 400, 24px, $color-brand);
+  margin-right: 5px;
   text-transform: uppercase;
 }
 
@@ -112,10 +129,13 @@
 
 .photo__appeal {
   @include text-style-base(14px, 400, 30px, $color-text-base);
-  min-height: 172px;
-  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include text-style-base(18px, 400, 30px, $color-text-base);
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }

@@ -3,8 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 355px;
+  padding: 45px 0 40px;
   font-family: $font-base;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0 20px;
+  }
 
   @media (min-width: $desktop-width) {
     &::after {
@@ -21,6 +25,7 @@
 }
 
 .reviews__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,10 +49,12 @@
 .reviews__text {
   @include text-style-base(14px, 400, 24px, $color-text-base);
   margin: 0;
+  margin-bottom: 65px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     @include text-style-base(18px, 400, 30px, $color-text-base);
+    margin-bottom: 40px;
   }
 }
 
@@ -59,11 +66,13 @@
 
 .reviews__name {
   @include text-style-base(18px, 700, 30px, $color-black);
+  margin-bottom: 25px;
   font-style: normal;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     @include text-style-base(20px, 700, 30px, $color-black);
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +87,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {

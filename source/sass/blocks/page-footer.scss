@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 282px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-family: $font-base;
   background-color: $color-background-light;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    min-height: 127px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,5 +34,11 @@
 }
 
 .page-footer__developed {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__text {
   @include text-style-base(14px, 400, 18px, $color-text-base);
+  margin-right: 15px;
 }

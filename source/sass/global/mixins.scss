@@ -10,42 +10,24 @@
 
 @mixin align-block {
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 320px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 660px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 960px;
     box-sizing: border-box;
   }
-}
-
-@mixin mobile-align {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 320px;
-  box-sizing: border-box;
-}
-
-@mixin tablet-align {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 660px;
-  box-sizing: border-box;
-}
-
-@mixin desktop-align {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 960px;
-  box-sizing: border-box;
 }
