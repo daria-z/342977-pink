@@ -13,13 +13,6 @@
   }
 }
 
-.page-header__container {
-  @media (max-width: $desktop-width) {
-    padding: 0;
-    width: 100%;
-  }
-}
-
 .page-header__wrapper {
   display: flex;
   flex-direction: column;

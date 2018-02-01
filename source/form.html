@@ -44,9 +44,9 @@
       </header>
       <section class="competition">
         <h2 class="visually-hidden">Форма регистрации для участия в конкурсе</h2>
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form container__fix" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset form__fieldset--name">
-            <legend class="visually-hidden"><p class="form__legend-text">Имя участника</p></legend>
+            <legend class="visually-hidden">Имя участника</legend>
             <p class="form__item-text">
               <input class="form__input-text" type="text" name="surname" id="form-surname" placeholder="Укажите фамилию*" required>
               <label class="form__label-text" for="form-surname">Фамилия</label>
@@ -60,63 +60,59 @@
               <label class="form__label-text" for="form-patronymic">Отчество</label>
             </p>
           </fieldset>
-          <div class="form__wrapper form__wrapper--achievements">
-            <fieldset class="form__fieldset form__fieldset--achievements">
-              <legend class="form__legend"><p class="form__legend-text">Ваши безбашенные достижения в путешествии</p></legend>
-              <p class="form__item-checkbox">
-                <input class="form__input-checkbox" type="checkbox" id="form-shark" name="selfie-with-sharck" value="shark" checked>
-                <label class="form__label-checkbox" for="form-shark">Сделал селфи с акулой</label>
-              </p>
-              <p class="form__item-checkbox">
-                <input class="form__input-checkbox" type="checkbox" id="form-burnt" name="beach-burnt" value="burnt" checked>
-                <label class="form__label-checkbox" for="form-burnt">Обгорел на пляже</label>
-              </p>
-              <p class="form__item-checkbox">
-                <input class="form__input-checkbox" type="checkbox" id="form-chuck" name="chuck-norris" value="chuck-norris">
-                <label class="form__label-checkbox" for="form-chuck">Видел Чака Норриса</label>
-              </p>
-              <p class="form__item-checkbox">
-                <input class="form__input-checkbox" type="checkbox" id="form-souvenirs" name="bought-souvenirs" value="souvenirs" checked>
-                <label class="form__label-checkbox" for="form-souvenirs">Накупил сувениров</label>
-              </p>
-              <p class="form__item-checkbox">
-                <input class="form__input-checkbox" type="checkbox" id="form-tower" name="kept-tower" value="tower">
-                <label class="form__label-checkbox" for="form-tower">Удержал башню</label>
-              </p>
-              <p class="form__item-checkbox">
-                <input class="form__input-checkbox" type="checkbox" id="form-defeated" name="defeated-hotel" value="defeated">
-                <label class="form__label-checkbox" for="form-defeated">Разгромил отель</label>
-              </p>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset form__fieldset--achievements">
+            <legend class="form__legend"><p class="form__legend-text">Ваши безбашенные достижения в путешествии</p></legend>
+            <p class="form__item-checkbox">
+              <input class="form__input-checkbox" type="checkbox" id="form-shark" name="selfie-with-sharck" value="shark" checked>
+              <label class="form__label-checkbox" for="form-shark">Сделал селфи с акулой</label>
+            </p>
+            <p class="form__item-checkbox">
+              <input class="form__input-checkbox" type="checkbox" id="form-burnt" name="beach-burnt" value="burnt" checked>
+              <label class="form__label-checkbox" for="form-burnt">Обгорел на пляже</label>
+            </p>
+            <p class="form__item-checkbox">
+              <input class="form__input-checkbox" type="checkbox" id="form-chuck" name="chuck-norris" value="chuck-norris">
+              <label class="form__label-checkbox" for="form-chuck">Видел Чака Норриса</label>
+            </p>
+            <p class="form__item-checkbox">
+              <input class="form__input-checkbox" type="checkbox" id="form-souvenirs" name="bought-souvenirs" value="souvenirs" checked>
+              <label class="form__label-checkbox" for="form-souvenirs">Накупил сувениров</label>
+            </p>
+            <p class="form__item-checkbox">
+              <input class="form__input-checkbox" type="checkbox" id="form-tower" name="kept-tower" value="tower">
+              <label class="form__label-checkbox" for="form-tower">Удержал башню</label>
+            </p>
+            <p class="form__item-checkbox">
+              <input class="form__input-checkbox" type="checkbox" id="form-defeated" name="defeated-hotel" value="defeated">
+              <label class="form__label-checkbox" for="form-defeated">Разгромил отель</label>
+            </p>
+          </fieldset>
           <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="visually-hidden"><p class="form__legend-text">Контакты для связи</p></legend>
-            <p class="form__item-text">
+            <legend class="visually-hidden"><p class="form__legend-text">Контактная иноформация</p></legend>
+            <p class="form__item-text form__item-text--contacts">
               <input class="form__input-text" type="text" name="tel" id="form-tel" placeholder="Номер, пожалуйста">
               <label class="form__label-text" for="form-tel">Номер телефона</label>
             </p>
-            <p class="form__item-text">
+            <p class="form__item-text form__item-text--contacts">
               <input class="form__input-text" type="text" name="address" id="form-address" placeholder="Введите почту*" required>
               <label class="form__label-text" for="form-address">Адрес почты</label>
             </p>
           </fieldset>
-          <div class="form__wrapper form__wrapper--apps">
-            <fieldset class="form__fieldset form__fieldset--apps">
-              <legend class="form__legend"><p class="form__legend-text">С каким приложением путешествовали?</p></legend>
-              <p class="form__item-radio">
-                <input class="form__input-radio" type="radio" id="form-iOS" name="device" value="Pink для iOS" checked>
-                <label class="form__label-radio" for="form-iOS">Pink для iOS</label>
-              </p>
-              <p class="form__item-radio">
-                <input class="form__input-radio" type="radio" id="form-Android" name="device" value="Pink на Android">
-                <label class="form__label-radio" for="form-Android">Pink на Android</label>
-              </p>
-              <p class="form__item-radio">
-                <input class="form_input-radio" type="radio" id="form-Windowsphone" name="device" value="Windows Phone">
-                <label class="form__label-radio" for="form-Windowsphone">Windows Phone</label>
-              </p>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset form__fieldset--apps">
+            <legend class="form__legend"><p class="form__legend-text">С каким приложением путешествовали?</p></legend>
+            <p class="form__item-radio">
+              <input class="form__input-radio" type="radio" id="form-iOS" name="device" value="Pink для iOS" checked>
+              <label class="form__label-radio" for="form-iOS">Pink для iOS</label>
+            </p>
+            <p class="form__item-radio">
+              <input class="form__input-radio" type="radio" id="form-Android" name="device" value="Pink на Android">
+              <label class="form__label-radio" for="form-Android">Pink на Android</label>
+            </p>
+            <p class="form__item-radio">
+              <input class="form_input-radio" type="radio" id="form-Windowsphone" name="device" value="Windows Phone">
+              <label class="form__label-radio" for="form-Windowsphone">Windows Phone</label>
+            </p>
+          </fieldset>
           <fieldset class="form__fieldset form__fieldset--impressions">
             <legend class="form__legend"><p class="form__legend-text">Опишите свои эмоции</p></legend>
             <p class="form__item-textarea">

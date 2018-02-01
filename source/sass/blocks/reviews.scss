@@ -3,11 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 45px 0 40px;
+  padding-top: 45px;
+  padding-bottom: 40px;
   font-family: $font-base;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
