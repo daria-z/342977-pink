@@ -1,19 +1,131 @@
 .retouch {
   background-color: $color-background-dark;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-background-light;
+  }
+}
+
+.retouch__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 55px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-background-dark;
+  }
+}
+
+.retouch__photo {
+  width: 280px;
+  height: 375px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .retouch__redactor {
-  border-bottom: 2px solid #dddfe0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba($color-secondary, 0.1);
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
-.retouch__list {
+.retouch__redactor-btn {
+  display: none;
+}
+
+.retouch__tools {
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   margin: 0;
-  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  min-height: 160px;
   list-style: none;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 200px;
+  }
 }
 
 .retouch__item {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-width: 275px;
+    min-height: 73px;
+  }
+}
+
+.retouch__tool {
+  display: block;
+  margin-bottom: 30px;
+  width: 48px;
+  height: 48px;
+  background-color: $color-brand;
+}
+
+.retouch__range {
+  display: none;
+  width: 40px;
+  height: 3px;
+  background-color: $color-secondary;
+
+  &:last-of-type {
+    border-bottom: 2px solid #dddfe0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border-bottom: 2px solid #dddfe0;
+  }
+
+  &--current {
+    display: block;
+  }
+}
+
+.retouch__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 200px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 134px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    min-height: 55px;
+  }
 }

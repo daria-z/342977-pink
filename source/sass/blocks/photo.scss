@@ -3,20 +3,99 @@
   background-color: $color-background-light;
 }
 
+.photo__item-best {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+
+.photo__img-best {
+  align-self: center;
+  width: 100%;
+}
+
+.photo__block-best {
+  padding: 23px 17px;
+  background-color: $color-background-dark;
+}
+
 .photo__list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: -20px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -54px;
+  }
+}
+
+.photo__item {
+  margin-bottom: 20px;
+  background-color: $color-background-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+
+    &:not(:nth-of-type(2n+2)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    margin-bottom: 54px;
+
+    &:nth-of-type(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.photo__img {
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .photo__block-text {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 23px 17px;
+  min-height: 143px;
   background-color: $color-background-dark;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+  }
 }
 
 .photo__name {
   @include text-style-base(14px, 700, 24px, $color-text-base);
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .photo__time {
@@ -26,11 +105,21 @@
 
 .photo__comment {
   @include text-style-base(14px, 400, 24px, $color-text-base);
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.photo__like {
+  margin-right: 20px;
+  min-width: 13px;
+  height: 12px;
+  background-color: $color-brand;
 }
 
 .photo__like-text {
   @include text-style-base(14px, 400, 24px, $color-brand);
+  margin-right: 5px;
   text-transform: uppercase;
 }
 
@@ -40,4 +129,13 @@
 
 .photo__appeal {
   @include text-style-base(14px, 400, 30px, $color-text-base);
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(18px, 400, 30px, $color-text-base);
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }

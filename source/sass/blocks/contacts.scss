@@ -1,51 +1,113 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
   font-family: $font-base;
   background-color: $color-background-light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
 }
 
 .contacts__text {
-  @include text-style-base(24px, 300, 1.2, $color-secondary);
+  @include text-style-base(24px, 300, 1.2, $color-text-base);
   margin: 0;
+  margin-bottom: 40px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-style-base(40px, 300, 1.2, $color-text-base);
+    width: 375px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(50px, 300, 1.2, $color-text-base);
+    width: 475px;
+  }
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .contacts__item {
+  @include text-style-base(24px, 300, 1.2, $color-brand);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 45px;
+  font-style: normal;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 1;
+    flex-basis: 280px;
+
+    &:last-of-type {
+      flex-shrink: 0;
+      flex-basis: 620px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    flex-basis: 310px;
+
+    &:last-of-type {
+      flex-shrink: 1;
+      flex-basis: 310px;
+    }
+
+    &:nth-of-type(1) {
+      order: 1;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 2;
+    }
+  }
 }
 
 .contacts__title {
-  @include text-style-base(18px, 700, 1.2, $color-text-black);
+  @include text-style-base(18px, 700, 1.2, $color-text-base);
   margin: 0;
+  margin-bottom: 5px;
   font-style: normal;
   text-align: center;
 }
 
 .contacts__tel {
-  @include text-style-base(24px, 300, 1.2, $color-brand);
   margin: 0;
-  font-style: normal;
-  text-decoration: none;
 }
 
 .contacts__email {
-  @include text-style-base(24px, 300, 1.2, $color-brand);
   margin: 0;
-  font-style: normal;
-  text-decoration: none;
 }
 
 .contrasts__location {
-  @include text-style-base(24px, 300, 1.2, $color-brand);
   margin: 0;
-  font-style: normal;
-  text-decoration: none;
 }
