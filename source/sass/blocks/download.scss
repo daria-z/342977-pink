@@ -1,26 +1,10 @@
 .download {
   font-family: $font-base;
   background-color: #1d2631;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: 260px 286px, cover;
-  background-position: bottom 270px center, bottom;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    background-size: auto 547px, cover;
-    background-position: bottom right 20px, bottom;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-position: bottom right 50px, bottom;
-  }
-}
-
-.download__container {
-  @media (max-width: 659px) {
-    padding: 0;
-    width: 100%;
-  }
 }
 
 .download__wrapper {
@@ -30,7 +14,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    justify-content: center;
+    flex-direction: row-reverse;
     min-height: 620px;
   }
 
@@ -39,23 +23,40 @@
   }
 }
 
+.download__picture {
+  align-self: flex-start;
+  margin-top: 110px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    margin-right: 20px;
+  }
+}
+
 .download__info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 396px;
   width: 100%;
   min-height: 271px;
   background-color: #1d2631;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    margin-top: 0;
+    margin-left: 20px;
+    margin-top: 90px;
     margin-right: auto;
+    margin-bottom: 110px;
     width: 300px;
     min-height: 420px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+    margin-top: 230px;
+    min-height: 510px;
   }
 }
 
@@ -98,6 +99,7 @@
 
 .download__description {
   @include text-style-base(14px, 300, 24px, $color-text-light);
+  margin: 0;
   width: 240px;
   text-align: center;
 

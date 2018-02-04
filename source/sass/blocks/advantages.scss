@@ -1,5 +1,6 @@
 .advantages {
   font-family: $font-base;
+  background-color: $color-background-dark;
 }
 
 .advantages__text-block {
@@ -8,6 +9,7 @@
   align-items: center;
   padding-top: 44px;
   padding-bottom: 30px;
+  width: 100%;
   background-color: $color-background-light;
 
   @media (min-width: $tablet-width) {
@@ -19,6 +21,8 @@
 .advantages__text {
   @include text-style-base(24px, 300, 1.2, $color-text-base);
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +31,8 @@
 
   @media (min-width: $desktop-width) {
     @include text-style-base(50px, 300, 1.2, $color-text-base);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &:first-of-type {
@@ -38,7 +44,7 @@
   }
 
   &:last-of-type {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 
@@ -46,6 +52,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
@@ -53,6 +61,10 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -60,18 +72,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin-top: 85px;
   margin-bottom: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    align-items: flex-end;
     margin-top: 75px;
     margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: 255px;
+
+    &:not(:last-of-type) {
+      margin-right: 70px;
+    }
   }
 }
 
@@ -95,32 +127,51 @@
   @include text-style-base(14px, 400, 24px, $color-text-base);
   margin: 0;
   margin-bottom: 35px;
-  padding: 0 9px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
-    padding: 0;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 400, 30px, $color-text-base);
+    margin-bottom: 0;
     text-align: center;
   }
 }
 
 .advantages__wrapper-image {
-  display: flex;
+  overflow-y: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-width: 270px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+    width: 100%;
+  }
 }
 
 .advantages__image {
+  align-self: center;
+  margin-bottom: -40px;
   width: 157px;
-  height: 330px;
 
   @media (min-width: $tablet-width) {
-    height: 484px;
-    width: auto;
+    margin-bottom: -65px;
+    min-width: 268px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 186px;
+
+    &:not(:last-of-type) {
+      margin-right: 135px;
+    }
   }
 
   &--pink {
@@ -131,7 +182,7 @@
     }
   }
 
-  &--friends {
+  &--normal {
     display: none;
 
     @media (min-width: $desktop-width) {

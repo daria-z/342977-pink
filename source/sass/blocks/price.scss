@@ -3,6 +3,7 @@
   padding-bottom: 45px;
   font-family: $font-base;
   background-color: $color-background-dark;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 90px;

@@ -29,13 +29,13 @@
   }
 }
 
-.contacts__list {
+.contacts__address {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -45,6 +45,8 @@
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -102,12 +104,16 @@
 
 .contacts__tel {
   margin: 0;
+  color: $color-brand;
 }
 
 .contacts__email {
   margin: 0;
+  color: $color-brand;
 }
 
 .contrasts__location {
   margin: 0;
+  text-align: center;
+  width: 235px;
 }

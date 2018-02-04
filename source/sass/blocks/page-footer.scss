@@ -3,18 +3,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 20px 40px;
   font-family: $font-base;
   background-color: $color-background-light;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 20px 35px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 10px 35px;
     min-height: 197px;
   }
 
