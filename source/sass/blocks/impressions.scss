@@ -1,0 +1,11 @@
+.impressions {
+  @media (min-width: $tablet-width) {
+    order: 5;
+    padding: 47px;
+    border: 2px solid $color-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}

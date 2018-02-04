@@ -1,0 +1,28 @@
+.apps {
+  align-items: flex-start;
+  padding: 40px 0 40px;
+  background-color: $color-background-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    order: 2;
+    align-items: flex-start;
+    padding: 50px 60px;
+    border: 2px solid $color-grey;
+    background-color: $color-background-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 435px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: auto;
+  }
+}
+
+.apps__legend {
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    padding: 0;
+  }
+}
