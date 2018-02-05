@@ -14,44 +14,44 @@
   }
 }
 
-.contacts-form__item {
-  @media (min-width: $tablet-width) {
-    flex-direction: column;
-    align-items: flex-start;
+// .contacts-form__item {
+//   @media (min-width: $tablet-width) {
+//     flex-direction: column;
+//     align-items: flex-start;
+//
+//     &:not(:last-of-type) {
+//       margin-bottom: 35px;
+//     }
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     width: 375px;
+//     flex-grow: 0;
+//     flex-shrink: 1;
+//     flex-basis: 375px;
+//
+//     &:not(:last-of-type) {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
 
-    &:not(:last-of-type) {
-      margin-bottom: 35px;
-    }
-  }
+// .contacts-form__legend {
+//   display: none;
+//
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
+// }
 
-  @media (min-width: $desktop-width) {
-    width: 375px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 375px;
+// .contacts-form__input {
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 15px;
+//   }
+// }
 
-    &:not(:last-of-type) {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.contacts-form__legend {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.contacts-form__input {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
-  }
-}
-
-.contacts-form__label {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-}
+// .contacts-form__label {
+//   @media (min-width: $tablet-width) {
+//     margin: 0;
+//   }
+// }

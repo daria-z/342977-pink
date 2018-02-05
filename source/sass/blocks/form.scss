@@ -52,6 +52,14 @@
   @media (min-width: $tablet-width) {
     padding: 0 20px;
   }
+
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 //филдсеты с текстовыми полями
@@ -68,6 +76,42 @@
     flex-direction: row-reverse;
     align-items: center;
   }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      &:not(:last-of-type) {
+        margin-bottom: 55px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &:not(:last-of-type) {
+        margin-bottom: 58px;
+      }
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &:not(:last-of-type) {
+        margin-bottom: 35px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 375px;
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 375px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .form__text-label {
@@ -79,6 +123,12 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 15px;
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 }
 
@@ -93,6 +143,12 @@
 
   &::placeholder {
     color: $color-text-base;
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
   }
 }
 

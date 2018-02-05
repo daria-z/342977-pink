@@ -13,17 +13,17 @@
     width: auto;
   }
 }
-
-.name__item {
-  @media (min-width: $tablet-width) {
-    &:not(:last-of-type) {
-      margin-bottom: 55px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:not(:last-of-type) {
-      margin-bottom: 58px;
-    }
-  }
-}
+//
+// .name__item {
+//   @media (min-width: $tablet-width) {
+//     &:not(:last-of-type) {
+//       margin-bottom: 55px;
+//     }
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     &:not(:last-of-type) {
+//       margin-bottom: 58px;
+//     }
+//   }
+// }
