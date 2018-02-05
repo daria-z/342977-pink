@@ -20,48 +20,6 @@
   }
 }
 
-.form__fieldset {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  width: 100%;
-  border: none;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 67px;
-  }
-}
-
-.form__legend {
-  @include text-style-base(14px, 400, 18px, $color-brand);
-  display: inline-block;
-  align-self: center;
-  margin: 0 auto;
-  padding: 40px 45px 0;
-  width: auto;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: inherit;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 20px;
-  }
-
-  &--contacts {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-  }
-}
-
 //филдсеты с текстовыми полями
 .form__text-item {
   display: flex;
