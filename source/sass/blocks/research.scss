@@ -1,6 +1,6 @@
 .research {
   display: none;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 80px;
   font-family: $font-base;
 
@@ -29,9 +29,8 @@
 .research__title {
   @media (min-width: $tablet-width) {
     @include text-style-base(30px, 700, 36px, $color-black);
-    margin: 0;
-    margin-left: 310px;
-    margin-right: auto;
+    margin: 0 auto 10px 310px;
+    width: 170px;
     text-align: left;
   }
 
@@ -44,8 +43,7 @@
 .research__description {
   @media (min-width: $tablet-width) {
     @include text-style-base(14px, 400, 24px, $color-text-base);
-    margin-left: 310px;
-    margin-right: auto;
+    margin: 0 auto 10px 310px;
     max-width: 570px;
     text-align: left;
   }
@@ -61,6 +59,7 @@
     @include text-style-base(14px, 400, 24px, $color-brand);
     margin-left: 310px;
     margin-right: auto;
+    text-decoration: underline;
   }
 
   @media (min-width: $desktop-width) {

@@ -8,7 +8,7 @@
   font-family: $font-base;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 20px;
   }
 
@@ -61,7 +61,7 @@
 
   @media (min-width: $tablet-width) {
     @include text-style-base(18px, 400, 30px, $color-text-base);
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 }
 
@@ -79,7 +79,7 @@
 
   @media (min-width: $tablet-width) {
     @include text-style-base(20px, 700, 30px, $color-black);
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {

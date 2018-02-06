@@ -11,7 +11,8 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    min-height: 373px;
+    height: 373px;
+    background-color: green;
   }
 }
 
