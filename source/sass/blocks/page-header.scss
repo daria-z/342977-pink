@@ -41,7 +41,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 66px;
+  height: 68px;
   border-bottom: 1px solid $color-black;
 
   @media (min-width: $tablet-width) {
@@ -74,11 +74,11 @@
   height: 50px;
   border: none;
   background-color: transparent;
+  background-position: right;
   cursor: pointer;
 
   &--opened {
     background-image: url("../../img/icon-menu-cross.svg");
-    background-position: center;
     background-repeat: no-repeat;
   }
 

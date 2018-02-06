@@ -25,7 +25,7 @@
 
 .download__picture {
   align-self: flex-start;
-  margin-top: 110px;
+  margin-top: 105px;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
@@ -36,8 +36,9 @@
 .download__info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  padding: 27px 0 35px;
   width: 100%;
   min-height: 271px;
   background-color: #1d2631;
@@ -78,6 +79,7 @@
 }
 
 .download__link {
+  margin-bottom: 30px;
   min-width: 274px;
   height: 51px;
   text-decoration: none;
@@ -91,8 +93,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 210px;
-  margin: 0;
+  width: 205px;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }

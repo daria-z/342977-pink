@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 44px;
+  padding-top: 40px;
   padding-bottom: 30px;
   width: 100%;
   background-color: $color-background-light;
@@ -126,7 +126,7 @@
 .advantages__item-description {
   @include text-style-base(14px, 400, 24px, $color-text-base);
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
