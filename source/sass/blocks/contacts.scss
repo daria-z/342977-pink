@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
 }
 
 .contacts__text {
@@ -25,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     @include text-style-base(50px, 300, 1.2, $color-text-base);
+    margin-bottom: 28px;
     width: 475px;
   }
 }
@@ -47,6 +52,7 @@
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 16px;
   }
 }
 
@@ -107,6 +113,10 @@
   margin-bottom: 5px;
   font-style: normal;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__tel {

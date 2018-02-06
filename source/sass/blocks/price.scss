@@ -12,6 +12,10 @@
     padding-top: 84px;
     padding-bottom: 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
 }
 
 .price__list {
@@ -45,6 +49,7 @@
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 700, 30px, $color-text-light);
     min-width: 236px;
+    height: 100px;
   }
 
   &--hidden {

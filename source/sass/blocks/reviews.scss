@@ -13,6 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+
     &::after {
       content: "";
       position: absolute;
@@ -35,7 +37,7 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    margin-top: 160px;
+    margin-top: 137px;
     margin-left: 10px;
     margin-right: 10px;
   }
