@@ -90,6 +90,8 @@
   }
 
   &--impressions {
+    padding: 15px 20px 0;
+
     @media (min-width: $tablet-width) {
       order: 5;
       padding: 47px;
@@ -107,7 +109,7 @@
   display: inline-block;
   align-self: center;
   margin: 0 auto;
-  padding: 40px 45px 0;
+  padding: 39px 45px 0;
   width: auto;
   text-transform: uppercase;
   text-align: center;

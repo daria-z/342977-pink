@@ -28,6 +28,10 @@
     padding: 0 45px;
     width: 747px;
   }
+
+  &--form {
+    margin: 31px 20px 54px;
+  }
 }
 
 .header-main__wrapper {
@@ -49,6 +53,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 92px 160px 87px;
+  }
+
+  &--form {
+    padding: 46px 20px 40px;
   }
 }
 
