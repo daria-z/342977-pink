@@ -13,18 +13,19 @@
 .header-main__title {
   @include text-style-base(24px, 300, 1.2, $color-text-light);
   display: block;
-  margin: 35px 20px 50px;
+  margin: 31px 20px 81px;
   width: 235px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     @include text-style-base(50px, 300, 1.2, $color-text-light);
-    margin: 80px 20px 75px;
+    margin: 69px 20px 139px;
     width: 495px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 175px 10px 95px;
+    margin: 171px 10px 103px;
+    padding: 0 45px;
     width: 747px;
   }
 }
@@ -37,17 +38,17 @@
 .header-main__description {
   @include text-style-base(14px, 400, 30px, $color-text-base);
   margin: auto;
-  padding: 55px 20px 50px;
+  padding: 46px 20px 48px;
   background-color: $color-background-light;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     @include text-style-base(18px, 400, 30px, $color-text-base);
-    padding: 100px 85px 75px;
+    padding: 94px 85px 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 100px 70px;
+    padding: 92px 160px 87px;
   }
 }
 

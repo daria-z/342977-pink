@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 39px 40px;
   font-family: $font-base;
   background-color: $color-background-light;
 
@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 10px;
-    min-height: 197px;
+    min-height: 263px;
   }
 
   &--index {
@@ -24,20 +24,21 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @media (min-width: $desktop-width) {
+      min-height: 197px;
+    }
   }
 }
 
 .page-footer__logo-link {
   width: 147px;
-  height: 40px;
+  min-height: 40px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 55px;
+    min-height: 55px;
   }
 }
 
@@ -45,10 +46,10 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
-  margin-left: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+    margin-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
