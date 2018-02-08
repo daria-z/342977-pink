@@ -5,9 +5,9 @@
   align-items: center;
   width: 100%;
   border: none;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     margin-bottom: 60px;
   }
 
@@ -24,59 +24,57 @@
     }
 
     @media (min-width: $desktop-width) {
-      justify-content: space-between;
+      justify-content: flex-start;
       flex-basis: 435px;
+      margin-top: -17px;
       margin-bottom: 50px;
       width: auto;
     }
   }
 
   &--achievements {
-    align-items: flex-start;
-    padding: 40px 0 40px;
+    padding: 40px 0 38px;
     background-color: $color-background-dark;
 
     @media (min-width: $tablet-width) {
       order: 4;
-      align-items: flex-start;
-      padding: 50px 60px;
+      padding: 52px 37px 45px;
       border: 2px solid $color-grey;
       background-color: $color-background-light;
     }
 
     @media (min-width: $desktop-width) {
-      flex-shrink: 1;
-      flex-wrap: wrap;
-      height: 235px;
+      padding: 53px 63px 46px 60px;
     }
   }
 
   &--contacts {
-    padding: 40px 20px 40px;
+    padding: 38px 20px 40px;
 
     @media (min-width: $tablet-width) {
+      position: relative;
       order: 3;
-      padding: 50px 60px;
+      margin-bottom: 65px;
+      padding: 45px 58px 25px 57px;
       border: 2px solid $color-grey;
     }
 
     @media (min-width: $desktop-width) {
-      flex-direction: row;
-      justify-content: space-between;
+      padding: 41px 58px 8px 57px;
       width: 100%;
     }
   }
 
   &--apps {
     align-items: flex-start;
-    padding: 40px 0 40px;
+    padding: 116px 0 36px;
     background-color: $color-background-dark;
 
     @media (min-width: $tablet-width) {
       width: 100%;
       order: 2;
       align-items: flex-start;
-      padding: 50px 60px;
+      padding: 55px 60px 48px 39px;
       border: 2px solid $color-grey;
       background-color: $color-background-light;
     }
@@ -85,6 +83,7 @@
       flex-basis: 435px;
       flex-grow: 0;
       flex-shrink: 1;
+      padding: 55px 51px 50px 55px;
       width: auto;
     }
   }
@@ -94,12 +93,44 @@
 
     @media (min-width: $tablet-width) {
       order: 5;
-      padding: 47px;
+      padding: 44px 57px 49px;
       border: 2px solid $color-grey;
     }
 
     @media (min-width: $desktop-width) {
+      padding: 41px 57px 40px;
       width: 100%;
+    }
+  }
+}
+
+.fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 100%;
+
+  &--achievements {
+    align-items: flex-start;
+    background-color: $color-background-dark;
+
+    @media (min-width: $tablet-width) {
+      align-items: flex-start;
+      background-color: $color-background-light;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-wrap: wrap;
+      flex-shrink: 1;
+      height: 130px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }
@@ -109,13 +140,14 @@
   display: inline-block;
   align-self: center;
   margin: 0 auto;
-  padding: 39px 45px 0;
+  padding: 0 45px 42px;
   width: auto;
   text-transform: uppercase;
   text-align: center;
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     padding: 0 20px;
   }
 
@@ -124,13 +156,39 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+      position: absolute;
+      top: -11px;
+    }
+  }
+
+  &--achievements {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -10px;
     }
   }
 
   &--apps {
+    position: absolute;
+    top: 40px;
+
+    @media (min-width: $tablet-width) {
+      top: -10px;
+    }
+
     @media (min-width: $desktop-width) {
-      width: 320px;
+      width: auto;
+      padding: 0 13px;
+    }
+  }
+
+  &--impressions {
+    padding-top: 38px;
+    padding-bottom: 0;
+
+    @media (min-width: $tablet-width) {
       padding: 0;
+      top: -10px;
     }
   }
 }
