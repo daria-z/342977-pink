@@ -119,18 +119,24 @@
   }
 }
 
-.contacts__tel {
+.contacts__info {
   margin: 0;
   color: $color-brand;
-}
+  cursor: pointer;
 
-.contacts__email {
-  margin: 0;
-  color: $color-brand;
-}
+  &:hover,
+  :focus {
+    color: $color-black;
+    text-decoration: underline;
+  }
 
-.contrasts__location {
-  margin: 0;
-  text-align: center;
-  width: 235px;
+  &:active {
+    color: rgba($color-black, 0.3);
+    text-decoration: none;
+  }
+
+  &--location {
+    text-align: center;
+    width: 235px;
+  }
 }

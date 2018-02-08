@@ -21,25 +21,25 @@
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item  main-nav__item--current">
-              <a class="main-nav__link">Фотографии</a>
+              <a class="main-nav__link main-nav__link--current">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page-main">
-      <header class="header-main">
+      <section class="header-main">
         <h1 class="header-main__title container">Фотографии пользователей</h1>
         <div class="header-main__wrapper">
           <p class="header-main__description container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
-      </header>
+      </section>
       <section class="photo">
         <div class="photo__item photo__item--best">
           <a href="#"><img class="photo__img photo__img--best" src="img/panorama-mobile@1x.jpg" alt="панорама"></a>
@@ -131,15 +131,15 @@
           <div class="retouch__tools">
             <div class="retouch__item">
               <label class="retouch__tool retouch__tool--crop" for="retouch__btn-crop"></label>
-              <div class="retouch__range retouch__range--current"></div>
+              <div class="retouch__bar retouch__bar--current"><div class="retouch__control"></div></div>
             </div>
             <div class="retouch__item">
               <label class="retouch__tool retouch__tool--fill" for="retouch__btn-fill"></label>
-              <div class="retouch__range"></div>
+              <div class="retouch__bar"><div class="retouch__control"></div></div>
             </div>
             <div class="retouch__item">
               <label class="retouch__tool retouch__tool--contrast" for="retouch__btn-contrast"></label>
-              <div class="retouch__range"></div>
+              <div class="retouch__bar"><div class="retouch__control"></div></div>
             </div>
           </div>
           <div class="retouch__buttons">
@@ -168,7 +168,7 @@
       </div>
       <div class="page-footer__developed">
         <span class="page-footer__text">Разработано</span>
-        <a class="page-footer__academy-link" href="#">
+        <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="page-footer__academy-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="html academy">
         </a>
       </div>

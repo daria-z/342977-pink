@@ -103,6 +103,15 @@
     color: $color-text-base;
   }
 
+  &:hover,
+  :focus {
+    border: 2px solid $color-black;
+  }
+
+  &:active {
+    border: 2px solid $color-brand;
+  }
+
   &--contacts {
     @media (min-width: $tablet-width) {
       margin-bottom: 15px;
@@ -135,42 +144,41 @@
   }
 }
 
-.form__checkbox {
-  & + label {
-    position: relative;
-    display: block;
-    padding-left: 70px;
-    cursor: pointer;
-    user-select: none;
+.form__checkbox + label {
+  position: relative;
+  display: block;
+  padding-left: 70px;
+  cursor: pointer;
+  user-select: none;
 
-    @media (min-width: $tablet-width) {
-      padding-left: 60px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      width: 39px;
-      height: 39px;
-      border: 2px solid $color-grey;
-      border-radius: 1px;
-      background-color: $color-background-light;
-    }
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
   }
 
-  &:checked + label {
-    &::after {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      width: 24px;
-      height: 18px;
-      background-image: url("../../img/icon-yes.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 2px solid $color-grey;
+    border-radius: 1px;
+    background-color: $color-background-light;
+  }
+}
+
+
+.form__checkbox:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 24px;
+    height: 18px;
+    background-image: url("../../img/icon-yes.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
   }
 }
 

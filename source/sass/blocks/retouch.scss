@@ -153,10 +153,11 @@
   }
 }
 
-.retouch__range {
+.retouch__bar {
+  position: relative;
   display: none;
   width: 240px;
-  height: 3px;
+  height: 2px;
   background-color: $color-secondary;
 
   @media (min-width: $tablet-width) {
@@ -171,6 +172,21 @@
 
   &--current {
     display: block;
+  }
+}
+
+.retouch__control {
+  position: absolute;
+  top: -6px;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $color-brand;
+  border-radius: 50%;
+  background: $color-background-dark;
+
+  &:hover {
+    background: $color-brand;
   }
 }
 

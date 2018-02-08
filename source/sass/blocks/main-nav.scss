@@ -57,9 +57,38 @@
   flex-shrink: 0;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    color: $color-brand;
+  }
+
+  &:active {
+    color: rgba($color-brand, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 400, 18px, $color-text-light);
     text-transform: none;
+
+    &:active {
+      color: rgba($color-text-light, 0.3);
+    }
+
+    &--current {
+      position: relative;
+      pointer-events: none;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -11px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-text-light;
+      }
+    }
   }
 }
