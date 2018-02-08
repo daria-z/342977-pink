@@ -69,7 +69,6 @@
   border: 1px;
   vertical-align: middle;
   background-color: $color-background-light;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: table-cell;
@@ -90,7 +89,6 @@
   vertical-align: middle;
   border: 1px;
   background-color: $color-background-light;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     height: 46px;
