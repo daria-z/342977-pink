@@ -1,17 +1,25 @@
 .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 90px;
   padding-bottom: 45px;
   font-family: $font-base;
   background-color: $color-background-dark;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-top: 90px;
-    padding-bottom: 70px;
+    padding-top: 84px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
   }
 }
 
 .price__list {
-  margin: 0 auto 40px;
+  margin: 0 auto 35px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -26,7 +34,7 @@
 .price__name /*ячейка названия тарифа*/ {
   @include text-style-base(18px, 700, 30px, $color-text-light);
   min-width: 280px;
-  height: 98px;
+  min-height: 98px;
   text-transform: uppercase;
   border: 1px;
   background-color: $color-secondary;
@@ -34,11 +42,14 @@
   @media (min-width: $tablet-width) {
     @include text-style-base(16px, 700, 30px, $color-text-light);
     min-width: 155px;
+    min-height: 78px;
+    height: 78px;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 700, 30px, $color-text-light);
     min-width: 236px;
+    height: 100px;
   }
 
   &--hidden {
@@ -58,12 +69,11 @@
   border: 1px;
   vertical-align: middle;
   background-color: $color-background-light;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: table-cell;
     width: 156px;
-    min-height: 46px;
+    min-height: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +89,6 @@
   vertical-align: middle;
   border: 1px;
   background-color: $color-background-light;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     height: 46px;

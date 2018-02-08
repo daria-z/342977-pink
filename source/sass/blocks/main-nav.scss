@@ -34,18 +34,19 @@
   flex-shrink: 0;
   border-bottom: 1px solid $color-black;
   border-top: 1px solid $color-black-opacity;
-  min-height: 63px;
+  min-height: 65px;
   text-align: center;
 
   @media (max-width: 959px) {
     width: 100%;
+    min-height: 64px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
 
     &:not(:last-of-type) {
-      margin-right: 75px;
+      margin-right: 79px;
     }
   }
 }

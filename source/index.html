@@ -8,61 +8,58 @@
   </head>
   <body>
     <header class="page-header page-header--opened">
-      <div class="page-header__container container">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-            <a class="page-header__logo-link">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="31" alt="Pink">
-            </a>
-            <button class="page-header__toggle page-header__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
-          <nav class="page-header__nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="page-header__wrapper container">
+        <div class="page-header__logo page-header__logo--opened">
+          <a class="page-header__logo-link">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="31" alt="Pink">
+          </a>
+          <button class="page-header__toggle page-header__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение для обработки фотографий Pink</h1>
       <section class="download">
-        <div class="download__container container">
-          <div class="download__wrapper">
-            <h2 class="visually-hidden">Как скачать наше приложение</h2>
-            <div class="download__info">
-              <p class="download__tagline">Взгляните на жизнь иначе</p>
-              <a class="button download__link" href="#">Скачать приложение</a>
-              <ul class="download__store-list">
-                <li class="download__store-item">
-                  <img class="download__store-image download__store-image--apple" src="img/logo-apple.svg" width="47" height="56" alt="App Store">
-                </li>
-                <li class="download__store-item">
-                  <img class="download__store-image download__store-image--google" src="img/logo-android.svg" width="43" height="47" alt="Google Play">
-                </li>
-                <li class="download__store-item">
-                  <img class="download__store-image download__store-image--windows" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Market">
-                </li>
-              </ul>
-              <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
+        <div class="download__wrapper container">
+          <h2 class="visually-hidden">Как скачать наше приложение</h2>
+          <img class="download__picture" src="../../img/iphone-hand-mobile@1x.png" alt="">
+          <div class="download__info">
+            <p class="download__tagline">Взгляните на жизнь иначе!</p>
+            <a class="button download__link" href="#">Скачать приложение</a>
+            <ul class="download__store-list">
+              <li class="download__store-item">
+                <img class="download__store-image download__store-image--apple" src="img/logo-apple.svg" width="47" height="56" alt="App Store">
+              </li>
+              <li class="download__store-item">
+                <img class="download__store-image download__store-image--google" src="img/logo-android.svg" width="43" height="47" alt="Google Play">
+              </li>
+              <li class="download__store-item">
+                <img class="download__store-image download__store-image--windows" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Market">
+              </li>
+            </ul>
+            <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
-      <section class="advantages background__dark">
+      <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <div class="advantages__text-block container">
+        <div class="advantages__text-block">
           <p class="advantages__text">Устали от серости мегаполиса?</p>
           <p class="advantages__text">Нам есть, что вам предложить!</p>
         </div>
@@ -88,15 +85,13 @@
           </div>
         </div>
       </section>
-      <div class="background__dark--research">
-        <section class="research container__inner">
-          <div class="research__wrapper">
-            <h2 class="research__title">Эффект на 24 часа!</h2>
-            <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="research__link" href="#">Узнать больше об исследовании</a>
-          </div>
-        </section>
-      </div>
+      <section class="research">
+        <div class="research__wrapper container">
+          <h2 class="research__title">Эффект на 24 часа!</h2>
+          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
       <section class="reviews container">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <ul class="reviews__list">
@@ -122,13 +117,13 @@
               </blockquote>
             </li>
           </ul>
-          <div class="reviews__toggles">
-            <button class="reviews__toggle-item" type="button">1</button>
-            <button class="reviews__toggle-item" type="button">2</button>
-            <button class="reviews__toggle-item" type="button">3</button>
+          <div class="reviews__toggles toggles-radio">
+            <div class="toggle-radio__item toggle-radio__item--active" type="button"></div>
+            <div class="toggle-radio__item" type="button"></div>
+            <div class="toggle-radio__item" type="button"></div>
           </div>
       </section>
-      <section class="price background-dark">
+      <section class="price">
         <h2 class="visually-hidden">Наши тарифы</h2>
         <table class="price__list">
           <tr class="price__rate">
@@ -197,33 +192,31 @@
           </td>
           </tr>
         </table>
-        <div class="price__toggles">
-          <button class="price__toggles-item" type="button">1</button>
-          <button class="price__toggles-item" type="button">2</button>
-          <button class="price__toggles-item" type="button">3</button>
+        <div class="price__toggles toggles-radio">
+          <div class="toggle-radio__item toggle-radio__item--dark" type="button"></div>
+          <div class="toggle-radio__item toggle-radio__item--active" type="button"></div>
+          <div class="toggle-radio__item toggle-radio__item--dark" type="button"></div>
         </div>
       </section>
       <section class="contacts container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
         <address class="contacts__address">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <div class="contacts__title">Звоните:</div>
-              <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts__title">Пишите:</div>
-              <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts__title">Приезжайте в гости:</div>
-              <p class="contrasts__location">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
+          <div class="contacts__item">
+            <div class="contacts__title">Звоните:</div>
+            <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__title">Пишите:</div>
+            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__title">Приезжайте в гости:</div>
+            <p class="contrasts__location">ул. Большая Конюшенная, 19/8</p>
+          </div>
         </address>
         <div class="map">
-          <img class="map__image" src="" alt="наше расположение на карте">
+          <img class="map__image" src="../../img/bg-map-mobile@1x.png" alt="наше расположение на карте">
         </div>
       </section>
     </main>

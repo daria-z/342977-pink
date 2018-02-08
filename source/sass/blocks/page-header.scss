@@ -1,14 +1,24 @@
 .page-header {
   background-color: $color-black-opacity;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--closed {
+    position: absolute;
+    width: 100%;
+  }
 
   &--opened {
     @media (max-width: $desktop-width) {
       background-color: $color-secondary;
-      background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -21,6 +31,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 10px;
     min-height: 110px;
   }
 }
@@ -30,7 +41,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 66px;
+  height: 70px;
   border-bottom: 1px solid $color-black;
 
   @media (min-width: $tablet-width) {
@@ -44,11 +55,16 @@
     padding: 0;
     border-bottom: none;
   }
+
+  &--closed {
+    border-bottom: none;
+  }
 }
 
 .page-header__logo-image {
   width: 75px;
   height: 66px;
+  background-color: transparent;
 }
 
 .page-header__toggle {
@@ -57,12 +73,12 @@
   width: 50px;
   height: 50px;
   border: none;
+  background-color: transparent;
+  background-position: right;
   cursor: pointer;
-  background-color: $color-secondary;
 
   &--opened {
     background-image: url("../../img/icon-menu-cross.svg");
-    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -79,6 +95,10 @@
 
 .page-header--closed .page-header__nav {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .page-header--opened .page-header__nav {
