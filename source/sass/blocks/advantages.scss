@@ -118,6 +118,10 @@
     margin-bottom: 30px;
     max-width: 245px;
 
+    &:last-of-type {
+      max-width: 235px;
+    }
+
     &:not(:last-of-type) {
       margin-right: 76px;
     }
