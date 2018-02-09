@@ -38,7 +38,11 @@
       <section class="download">
         <div class="download__wrapper container">
           <h2 class="visually-hidden">Как скачать наше приложение</h2>
-          <img class="download__picture" src="../../img/iphone-hand-mobile@1x.png" alt="">
+          <picture>
+            <source media="(min-width: 960px)" srcset="../../img/iphone-hand-desktop@1x.png 1x, ../../img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="../../img/iphone-hand-tablet@1x.png 1x, ../../img/iphone-hand-tablet@2x.png 2x">
+            <img class="download__picture" width="" height="" src="../../img/iphone-hand-mobile@1x.png" srcset="../../img/iphone-hand-mobile@2x.png 2x" alt="">
+          </picture>
           <div class="download__info">
             <p class="download__tagline">Взгляните на жизнь иначе!</p>
             <a class="button download__link" href="#">Скачать приложение</a>
