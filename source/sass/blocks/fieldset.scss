@@ -142,14 +142,16 @@
   align-self: center;
   margin: 0 auto;
   padding: 0 45px 42px;
-  width: auto;
+  width: 100%;
   text-transform: uppercase;
   text-align: center;
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
+    @include text-style-base(14px, 400, 30px, $color-brand);
     position: absolute;
     padding: 0 20px;
+    width: auto;
   }
 
   &--contacts {
