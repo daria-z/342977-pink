@@ -144,7 +144,7 @@
   }
 }
 
-.form__checkbox + label {
+.form__checkbox + .form__checkbox-label {
   position: relative;
   display: block;
   padding-left: 70px;
@@ -168,7 +168,7 @@
 }
 
 
-.form__checkbox:checked + label {
+.form__checkbox:checked + .form__checkbox-label {
   &::after {
     content: "";
     position: absolute;
@@ -214,7 +214,7 @@
     }
   }
 
-  &:checked + label {
+  &:checked + .form__radio-label {
     &::after {
       content: "";
       position: absolute;

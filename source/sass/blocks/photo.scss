@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: -18px;
   padding: 0 20px;
   list-style: none;
 
@@ -19,7 +18,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: -54px;
     padding: 0 10px;
   }
 }
@@ -46,6 +44,7 @@
   }
 
   &--best {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +77,28 @@
     align-self: center;
     width: 100%;
     height: auto;
+  }
+}
+
+.photo__flag {
+  @include text-style-base(12px, 700, 24px, $color-text-light);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding-top: 5px;
+  width: 140px;
+  height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-brand;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 10px;
   }
 }
 
