@@ -64,10 +64,49 @@
 .page-header__logo-image {
   background-color: transparent;
   width: 75px;
-  height: auto;
+  height: 22px;
 
   @media (min-width: $tablet-width) {
     width: 147px;
+    height: 41px;
+  }
+}
+
+.page-header__pink {
+  display: none;
+  fill: $color-text-light;
+
+  &:hover,
+  :focus {
+    fill: $color-brand;
+  }
+
+  &:active {
+    fill: rgba($color-text-light, 0.3);
+  }
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
 

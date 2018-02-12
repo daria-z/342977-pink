@@ -113,8 +113,21 @@
   }
 
   &--contacts {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 15px;
+      padding-right: 62px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 62px;
+        height: 62px;
+        background-color: $color-grey;
+      }
     }
   }
 }
