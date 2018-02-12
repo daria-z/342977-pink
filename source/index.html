@@ -23,7 +23,7 @@
       <symbol id="icon-menu-cross" viewBox="0 0 23.867 23.867">
         <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
       </symbol>
-      <symbol  id="icon-yes" viewBox="-82.357 4.875 21.698 16.09" width="21.698px" height="16.09px">
+      <symbol  id="icon-yes" viewBox="-82.357 4.875 21.698 16.09">
         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
       </symbol>
       <symbol id="icon-no" viewBox="0 0 26.752 26.752">
@@ -230,15 +230,21 @@
           </td>
           <td class="price__field">
             <span class="price__text">Розовый фильтр</span>
-            <img class="price__icon price__icon--unincluded" src="img/icon-no.svg" width="27" height="27" alt="не входит в стоимость">
+            <svg class="price__icon price__icon--unincluded" alt="не входит в стоимость">
+              <use xlink:href="#icon-no"></use>
+            </svg>
           </td>
           <td class="price__field">
             <span class="price__text">Розовый фильтр</span>
-            <img class="price__icon price__icon--included" src="img/icon-yes.svg" width="34" height="23" alt="входит в стоимость">
+            <svg class="price__icon" alt="входит в стоимость">
+              <use xlink:href="#icon-yes"></use>
+            </svg>
           </td>
           <td class="price__field">
             <span class="price__text">Розовый фильтр</span>
-            <img class="price__icon price__icon--included" src="img/icon-yes.svg" width="34" height="23" alt="входит в стоимость">
+            <svg class="price__icon" alt="входит в стоимость">
+              <use xlink:href="#icon-yes"></use>
+            </svg>
           </td>
           </tr>
           <tr class="price__parameter">
@@ -247,15 +253,21 @@
             </td>
           <td class="price__field">
             <span class="price__text">Смайлики</span>
-            <img class="price__icon price__icon--unincluded" src="img/icon-no.svg" width="27" height="27" alt="не входит в стоимость">
+            <svg class="price__icon price__icon--unincluded" alt="не входит в стоимость">
+              <use xlink:href="#icon-no"></use>
+            </svg>
           </td>
           <td class="price__field">
             <span class="price__text">Смайлики</span>
-            <img class="price__icon price__icon--included" src="img/icon-yes.svg" width="34" height="23" alt="входит в стоимость">
+            <svg class="price__icon" alt="входит в стоимость">
+              <use xlink:href="#icon-yes"></use>
+            </svg>
           </td>
           <td class="price__field">
             <span class="price__text">Смайлики</span>
-            <img class="price__icon price__icon--included" src="img/icon-yes.svg" width="34" height="23" alt="входит в стоимость">
+            <svg class="price__icon" alt="входит в стоимость">
+              <use xlink:href="#icon-yes"></use>
+            </svg>
           </td>
           </tr>
           <tr class="price__parameter">
@@ -264,15 +276,21 @@
             </td>
           <td class="price__field">
             <span class="price__text">Комментарии</span>
-            <img class="price__icon price__icon--unincluded" src="img/icon-no.svg" width="27" height="27" alt="не входит в стоимость">
+            <svg class="price__icon price__icon--unincluded" alt="не входит в стоимость">
+              <use xlink:href="#icon-no"></use>
+            </svg>
           </td>
           <td class="price__field">
             <span class="price__text">Комментарии</span>
-            <img class="price__icon price__icon--unincluded" src="img/icon-no.svg" width="27" height="27" alt="не входит в стоимость">
+            <svg class="price__icon price__icon--unincluded" alt="не входит в стоимость">
+              <use xlink:href="#icon-no"></use>
+            </svg>
           </td>
           <td class="price__field">
             <span class="price__text">Комментарии</span>
-            <img class="price__icon price__icon--included" src="img/icon-yes.svg" width="34" height="23" alt="входит в стоимость">
+            <svg class="price__icon" alt="входит в стоимость">
+              <use xlink:href="#icon-yes"></use>
+            </svg>
           </td>
           </tr>
         </table>
