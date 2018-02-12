@@ -72,30 +72,35 @@
 }
 
 .page-header__toggle {
-  display: block;
-  padding: 25px;
-  width: 25px;
+  display: none;
+  margin: 15px 0;
+  width: 50px;
   height: 25px;
   border: none;
   background-color: transparent;
   background-position: right;
   cursor: pointer;
+  fill: $color-text-light;
 
-  &--opened {
-    background-image: url("../../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
+  &:hover,
+  :focus {
+    fill: $color-brand;
   }
 
-  &--closed {
-    background-image: url("../../img/icon-menu-burger.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+  &:active {
+    fill: $color-brand;
+    opacity: 0.3;
+  }
+
+  &--show {
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
+
 
 .page-header--closed .page-header__nav {
   display: none;

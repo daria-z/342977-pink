@@ -189,7 +189,7 @@
   margin-right: 18px;
   min-width: 13px;
   height: 12px;
-  background-color: $color-brand;
+  background-image: url("../img/icon-heart.svg");
 
   &--best {
     @media (min-width: $tablet-width) {
