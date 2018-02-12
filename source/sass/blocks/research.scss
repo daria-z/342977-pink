@@ -28,6 +28,7 @@
 }
 
 .research__timer {
+  position: relative;
   margin-right: 70px;
   width: 238px;
   height: 276px;
@@ -47,6 +48,29 @@
   @media (min-width: $desktop-width) {
     width: 298px;
     height: 345px;
+  }
+}
+
+.research__time {
+  @include text-style-base(96px, 700, 149.47px, $color-brand);
+  position: absolute;
+  top: 57px;
+  left: 17px;
+  padding-top: 10px;
+  padding-left: 31px;
+  width: 202px;
+  height: 202px;
+  border: 14px solid $color-brand;
+  border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(120px, 700, 186.84px, $color-brand);
+    top: 68px;
+    left: 23px;
+    padding-left: 39px;
+    width: 254px;
+    height: 254px;
+    border: 17px solid $color-brand;
   }
 }
 
