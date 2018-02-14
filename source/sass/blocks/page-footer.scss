@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 9px;
+    padding: 96px 9px;
   }
 
   &--index {
@@ -55,6 +55,20 @@
   }
 }
 
+.page-footer_logo-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer_logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .page-footer__developed {
   display: flex;
   align-items: center;
@@ -80,6 +94,8 @@
 }
 
 .page-footer__academy-image {
+  width: 27px;
+  height: 34px;
   fill: $color-brand;
 
   &:hover,
