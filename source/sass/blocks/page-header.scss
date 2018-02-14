@@ -155,16 +155,3 @@
     }
   }
 }
-
-
-.page-header--closed .page-header__nav {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
-.page-header--opened .page-header__nav {
-  display: flex;
-}
