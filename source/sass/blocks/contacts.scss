@@ -125,7 +125,7 @@
   cursor: pointer;
 
   &:hover,
-  :focus {
+  &:focus {
     color: $color-black;
     text-decoration: underline;
   }

@@ -108,7 +108,7 @@
   }
 
   &:hover,
-  :focus {
+  &:focus {
     border: 2px solid $color-black;
   }
 
@@ -183,10 +183,7 @@
     background-color: $color-background-light;
   }
 
-  &:hover::before {
-    border: 2px solid $color-secondary;
-  }
-
+  &:hover::before,
   &:focus::before {
     border: 2px solid $color-secondary;
   }
@@ -242,10 +239,7 @@
       background-color: $color-background-light;
     }
 
-    &:hover::before {
-      border: 2px solid $color-secondary;
-    }
-
+    &:hover::before,
     &:focus::before {
       border: 2px solid $color-secondary;
     }

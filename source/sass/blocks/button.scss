@@ -12,7 +12,7 @@
   background-color: transparent;
 
   &:hover,
-  :focus {
+  &:focus {
     color: $color-brand;
     background-color: $color-background-light;
   }
@@ -27,7 +27,7 @@
   border-color: #dddfe0;
 
   &:hover,
-  :focus {
+  &:focus {
     color: #b5b9be;
     background-color: transparent;
     border-color: #b5b9be;
@@ -54,7 +54,7 @@
 
 
     &:hover,
-    :focus {
+    &:focus {
       color: $color-text-light;
       background-color: $color-brand;
       border-color: $color-brand;
