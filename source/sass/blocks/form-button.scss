@@ -13,4 +13,14 @@
     min-width: 299px;
     min-height: 63px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($color-text-light, 0.3);
+    background-color: #1c9b5e;
+  }
 }

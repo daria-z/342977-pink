@@ -7,7 +7,7 @@
   }
 }
 
-.toggle-radio__item {
+.toggles-radio__item {
   margin-right: 13px;
   width: 6px;
   height: 6px;
@@ -26,7 +26,7 @@
   }
 
   &:hover,
-  :focus {
+  &:focus {
     background-color: #7e868f;
   }
 

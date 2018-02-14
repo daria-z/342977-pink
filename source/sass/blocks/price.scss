@@ -1,4 +1,5 @@
 .price {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,12 +15,34 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 146px;
     padding-bottom: 90px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -67px;
+    left: 0;
+    width: 100%;
+    height: 93px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: -44px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
   }
 }
 
 .price__list {
-  margin: 0 auto 35px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -33,8 +56,9 @@
 
 .price__name /*ячейка названия тарифа*/ {
   @include text-style-base(18px, 700, 30px, $color-text-light);
+  position: relative;
   min-width: 280px;
-  min-height: 98px;
+  height: 98px;
   text-transform: uppercase;
   border: 1px;
   background-color: $color-secondary;
@@ -42,7 +66,6 @@
   @media (min-width: $tablet-width) {
     @include text-style-base(16px, 700, 30px, $color-text-light);
     min-width: 155px;
-    min-height: 78px;
     height: 78px;
   }
 
@@ -50,6 +73,10 @@
     @include text-style-base(18px, 700, 30px, $color-text-light);
     min-width: 236px;
     height: 100px;
+  }
+
+  &--hit {
+    position: relative;
   }
 
   &--hidden {
@@ -62,12 +89,51 @@
   }
 }
 
+.price__flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 73px;
+  background: url("../img/bg-hit.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 61px;
+    height: 61px;
+    background: url("../img/bg-hit-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 74px;
+    height: 73px;
+    background: url("../img/bg-hit.svg");
+  }
+}
+
+.price__flag-text {
+  @include text-style-base(14px, 700, 30px, $color-text-light);
+  display: block;
+  width: 100px;
+  height: 104px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 104px;
+  }
+}
+
 .price__parameter-name /*ячейка названия параметра тарифа*/ {
   display: none;
   padding: 0 18px;
   min-height: 60px;
   border: 1px;
-  vertical-align: middle;
   background-color: $color-background-light;
 
   @media (min-width: $tablet-width) {
@@ -84,7 +150,7 @@
 
 .price__field /*внутренняя ячейка*/ {
   padding: 0 18px;
-  height: 60px;
+  height: 58px;
   text-align: left;
   vertical-align: middle;
   border: 1px;
@@ -137,6 +203,11 @@
 .price__icon {
   width: 27px;
   height: 27px;
+  fill: #3dc644;
+
+  &--unincluded {
+    fill: #f25b26;
+  }
 }
 
 .price__toggles {

@@ -1,7 +1,7 @@
 .research {
   display: none;
-  padding-top: 94px;
-  padding-bottom: 80px;
+  padding-top: 56px;
+  padding-bottom: 56px;
   font-family: $font-base;
 
   @media (min-width: $tablet-width) {
@@ -9,16 +9,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 130px;
-    padding-bottom: 115px;
+    padding-top: 39px;
+    padding-bottom: 67px;
     background-color: $color-background-dark;
   }
 }
 
 .research__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -28,17 +27,75 @@
   }
 }
 
+.research__timer {
+  position: relative;
+  margin-right: 70px;
+  width: 238px;
+  height: 276px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 67px;
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.research__timer-icon {
+  width: 238px;
+  height: 276px;
+  fill: rgba($color-secondary, 0.1);
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.research__time {
+  @include text-style-base(96px, 700, 149.47px, $color-brand);
+  position: absolute;
+  top: 57px;
+  left: 17px;
+  padding-top: 10px;
+  padding-left: 31px;
+  width: 202px;
+  height: 202px;
+  border: 14px solid $color-brand;
+  border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    @include text-style-base(120px, 700, 186.84px, $color-brand);
+    top: 68px;
+    left: 23px;
+    padding-left: 39px;
+    width: 254px;
+    height: 254px;
+    border: 17px solid $color-brand;
+  }
+}
+
+.research__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+  }
+}
+
 .research__title {
   @media (min-width: $tablet-width) {
     @include text-style-base(30px, 700, 36px, $color-black);
-    margin: 0 auto 10px 310px;
+    margin: 0 0 10px;
     width: 170px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(30px, 700, 30px, $color-black);
-    margin-left: 370px;
     margin-bottom: 26px;
     width: 300px;
   }
@@ -47,14 +104,12 @@
 .research__description {
   @media (min-width: $tablet-width) {
     @include text-style-base(14px, 400, 24px, $color-text-base);
-    margin: 0 auto 10px 310px;
-    max-width: 530px;
+    margin: 0 auto 10px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 400, 30px, $color-text-base);
-    margin-left: 370px;
     margin-bottom: 30px;
   }
 }
@@ -62,13 +117,11 @@
 .research__link {
   @media (min-width: $tablet-width) {
     @include text-style-base(14px, 400, 24px, $color-brand);
-    margin-left: 310px;
     margin-right: auto;
     text-decoration: underline;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 400, 30px, $color-brand);
-    margin-left: 370px;
   }
 }

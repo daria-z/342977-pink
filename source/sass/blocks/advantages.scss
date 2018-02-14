@@ -1,6 +1,28 @@
 .advantages {
+  position: relative;
   font-family: $font-base;
   background-color: $color-background-dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 149px;
+    left: 0;
+    width: 100%;
+    height: 93px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 196px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 322px;
+    }
+  }
 }
 
 .advantages__text-block {
@@ -8,8 +30,9 @@
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   width: 100%;
+  min-height: 200px;
   background-color: $color-background-light;
 
   @media (min-width: $tablet-width) {
@@ -19,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 67px;
-    padding-bottom: 76px;
+    padding-bottom: 79px;
   }
 }
 
@@ -118,6 +141,10 @@
     margin-bottom: 30px;
     max-width: 245px;
 
+    &:last-of-type {
+      max-width: 235px;
+    }
+
     &:not(:last-of-type) {
       margin-right: 76px;
     }
@@ -127,7 +154,7 @@
 .advantages__item-title {
   @include text-style-base(18px, 700, 24px, $color-black);
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -161,6 +188,7 @@
 }
 
 .advantages__wrapper-image {
+  z-index: 2;
   overflow: hidden;
   height: 285px;
 
@@ -171,10 +199,10 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
-    margin-bottom: 55px;
+    justify-content: space-between;
+    margin-bottom: 45px;
     width: 100%;
-    height: 301px;
+    height: 310px;
   }
 }
 
@@ -183,12 +211,13 @@
   width: 157px;
 
   @media (min-width: $tablet-width) {
-    min-width: 268px;
+    width: 268px;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
     align-self: flex-start;
-    min-width: 186px;
+    width: 290px;
 
     &:not(:last-of-type) {
       margin-right: 135px;
