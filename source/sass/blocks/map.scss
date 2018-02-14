@@ -53,3 +53,16 @@
     }
   }
 }
+
+.map__google {
+  width: 100%;
+  min-height: 198px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 371px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 486px;
+  }
+}
