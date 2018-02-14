@@ -66,15 +66,6 @@
   background-color: transparent;
   width: 75px;
   height: 22px;
-
-  @media (min-width: $tablet-width) {
-    width: 147px;
-    height: 50px;
-  }
-}
-
-.page-header__pink {
-  display: none;
   fill: $color-text-light;
 
   &:hover,
@@ -85,6 +76,16 @@
   &:active {
     fill: rgba($color-text-light, 0.3);
   }
+
+
+  @media (min-width: $tablet-width) {
+    width: 147px;
+    height: 50px;
+  }
+}
+
+.page-header__pink {
+  display: none;
 
   &--mobile {
     display: block;
@@ -112,10 +113,10 @@
 }
 
 .page-header__toggle {
-  display: none;
+  padding: 0;
   margin: 15px 0;
   height: 25px;
-  width: 25px;
+  min-width: 25px;
   border: none;
   background-color: transparent;
   background-position: right;
@@ -132,12 +133,26 @@
     opacity: 0.3;
   }
 
-  &--show {
-    display: block;
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.page-header__icon {
+  display: none;
+  height: 25px;
+  width: 25px;
+
+  &--burger {
+    width: 50px;
+  }
+
+  &--opened {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 

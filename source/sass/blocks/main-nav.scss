@@ -9,6 +9,10 @@
     background-color: $color-secondary;
     background-image: none;
   }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -23,6 +27,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
 }
 
