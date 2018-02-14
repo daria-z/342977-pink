@@ -1,7 +1,7 @@
 .research {
   display: none;
-  padding-top: 94px;
-  padding-bottom: 80px;
+  padding-top: 56px;
+  padding-bottom: 56px;
   font-family: $font-base;
 
   @media (min-width: $tablet-width) {
@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 130px;
-    padding-bottom: 115px;
+    padding-top: 39px;
+    padding-bottom: 67px;
     background-color: $color-background-dark;
   }
 }
@@ -34,7 +34,7 @@
   height: 276px;
 
   @media (min-width: $desktop-width) {
-    margin-right: 62px;
+    margin-right: 67px;
     width: 298px;
     height: 345px;
   }
