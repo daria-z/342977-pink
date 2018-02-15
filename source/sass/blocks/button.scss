@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
   width: 280px;
   min-height: 55px;
   border: 3px solid $color-text-light;
@@ -51,7 +52,7 @@
   &--active {
     color: $color-brand;
     border-color: $color-brand;
-
+    margin-bottom: 22px;
 
     &:hover,
     &:focus {
@@ -62,6 +63,10 @@
 
     &:active {
       color: rgba($color-text-light, 0.3);
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 }

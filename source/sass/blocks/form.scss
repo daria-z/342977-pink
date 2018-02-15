@@ -51,6 +51,7 @@
 
   &--contacts {
     @media (min-width: $tablet-width) {
+      position: relative;
       flex-direction: column;
       align-items: flex-start;
 
@@ -117,22 +118,36 @@
   }
 
   &--contacts {
-    position: relative;
-
     @media (min-width: $tablet-width) {
       margin-bottom: 15px;
       padding-right: 62px;
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        width: 62px;
-        height: 62px;
-        background-color: $color-grey;
-      }
     }
+  }
+}
+
+.form__contacts-img {
+  position: absolute;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    top: 2px;
+    right: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: $color-background-dark;
+  }
+}
+
+.form__contacts-icon {
+  width: 20px;
+  height: 20px;
+  fill: $color-brand;
+
+  &--mail {
+    height: 15px;
   }
 }
 
