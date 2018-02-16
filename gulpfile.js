@@ -21,13 +21,11 @@ gulp.task("build", function (done) {
 });
 gulp.task("copy", function() {
   return gulp.src([
-      "source/fonts/**/*.{woff, woff2}",
-      "source/img/**",
-      "source/js/**"
-    ], {
-      base: "source"
-    })
-    .pipe(gulp.dest("build"));
+      "source/**/*.{woff,woff2}",
+      "source/**/*.{png,jpg,gif,svg}",
+      "source/**/*.js"
+    ])
+    .pipe(gulp.dest("build/"));
 });
 gulp.task("clean", function() {
   return del("build");
