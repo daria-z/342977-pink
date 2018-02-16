@@ -207,18 +207,18 @@
 }
 
 .photo__like-text {
-  @include text-style-base(14px, 400, 24px, $color-brand);
+  @include text-style-base(12px, 400, 24px, $color-brand);
   margin-right: 5px;
   text-transform: uppercase;
 }
 
 .photo__like-number {
-  @include text-style-base(14px, 400, 24px, $color-brand);
+  @include text-style-base(12px, 400, 24px, $color-brand);
 }
 
 .photo__appeal {
   @include text-style-base(14px, 400, 30px, $color-text-base);
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 45px;
   text-align: center;
 

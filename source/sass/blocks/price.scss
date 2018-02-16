@@ -192,6 +192,7 @@
   @include text-style-base(14px, 300, 30px, $color-text-base);
   display: inline-block;
   margin: 0;
+  margin-left: 10px;
   min-width: 200px;
   text-transform: uppercase;
 
