@@ -45,6 +45,12 @@
   }
 }
 
+.reviews_item {
+  &--hide {
+    display: none;
+  }
+}
+
 .reviews__block {
   margin: 0;
   display: flex;
