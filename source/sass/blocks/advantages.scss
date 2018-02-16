@@ -190,6 +190,16 @@
     margin-bottom: 0;
     text-align: center;
   }
+
+  &--last {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .advantages__wrapper-image {
