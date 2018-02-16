@@ -28,18 +28,6 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
-
-  &--padding {
-    padding-top: 66px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 110px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 0;
-    }
-  }
 }
 
 .download__wrapper {
@@ -119,7 +107,7 @@
     @include text-style-base(40px, 300, 1.2, $color-text-light);
     display: block;
     margin-bottom: 32px;
-    padding: 0 30px;
+    max-width: 200px;
     text-align: center;
   }
 
@@ -127,6 +115,7 @@
     @include text-style-base(50px, 300, 1.2, $color-text-light);
     margin-bottom: 51px;
     padding: 0;
+    max-width: 250px;
   }
 }
 

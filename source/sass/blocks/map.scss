@@ -45,11 +45,12 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      height: 66px;
+      top: -2px;
+      height: 70px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 100px;
+      height: 101px;
     }
   }
 }

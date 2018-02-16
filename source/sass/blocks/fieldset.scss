@@ -163,15 +163,28 @@
       display: block;
       position: absolute;
       top: -15px;
+      left: 189px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 347px;
     }
   }
 
   &--achievements {
     position: absolute;
     top: 35px;
+    max-width: 320px;
 
     @media (min-width: $tablet-width) {
       top: -16px;
+      left: 102px;
+      max-width: 660px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 260px;
+      max-width: 960px;
     }
   }
 
@@ -181,10 +194,13 @@
 
     @media (min-width: $tablet-width) {
       top: -18px;
+      left: 128px;
     }
 
     @media (min-width: $desktop-width) {
+      left: 43px;
       width: auto;
+      max-width: 433px;
       padding: 0 13px;
     }
   }
@@ -194,9 +210,15 @@
     padding-bottom: 0;
 
     @media (min-width: $tablet-width) {
-      padding: 0 10px;
       top: -17px;
+      left: 206px;
+      padding: 0 10px;
       background-color: $color-background-light;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 333px;
+      padding: 0 40px;
     }
   }
 }
