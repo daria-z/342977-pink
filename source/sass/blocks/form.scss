@@ -82,15 +82,17 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 21px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 
   &--contacts {
     @media (min-width: $tablet-width) {
       margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 }
@@ -238,7 +240,7 @@
   & + .form__radio-label {
     position: relative;
     display: block;
-    padding-left: 59px;
+    padding-left: 68px;
     cursor: pointer;
     user-select: none;
 
@@ -304,10 +306,14 @@
 
 .form__clarification {
   margin: 0;
+  margin-top: 2px;
   font-size: 11pt;
   text-transform: uppercase;
 
   sup {
+    top: 0;
+    margin-right: 2px;
+    font-size: 100%;
     color: $color-brand;
   }
 
