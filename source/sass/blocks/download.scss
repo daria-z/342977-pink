@@ -1,11 +1,11 @@
 .download {
   font-family: $font-base;
-  background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: 320px 462px;
   background-position: top;
   background-position-y: -66px;
   background-repeat: no-repeat;
+  background-color: #2c3c4c;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
