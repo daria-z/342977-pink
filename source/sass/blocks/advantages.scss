@@ -7,24 +7,19 @@
     content: "";
     position: absolute;
     z-index: 1;
-    top: 149px;
+    top: 184px;
     left: 0;
     width: 100%;
-    height: 93px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
+    height: 33vw;
+    background: linear-gradient(176deg, rgb(254, 254, 254) 46%, rgb(242, 242, 242) 0%);
 
     @media (min-width: $tablet-width) {
-      top: 196px;
+      top: 200px;
+      height: 22vw;
     }
 
     @media (min-width: $desktop-width) {
-      top: 322px;
-    }
-
-    @media (min-width: 1200px) {
-      top: 326px;
+      top: 253px;
     }
   }
 }
@@ -132,6 +127,7 @@
   display: flex;
   flex-direction: column;
   max-width: 280px;
+  z-index: 5;
 
   &:last-of-type {
     max-width: 261px;
@@ -141,6 +137,11 @@
   @media (min-width: $tablet-width) {
     max-width: 310px;
     margin-bottom: 0;
+
+    &:last-of-type {
+      max-width: 310px;
+      margin-bottom: 8px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -197,10 +198,6 @@
     margin-bottom: 0;
     text-align: center;
     max-width: 245px;
-
-    &:last-of-type {
-      max-width: 235px;
-    }
   }
 
   &--last {

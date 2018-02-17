@@ -23,26 +23,27 @@
     content: "";
     position: absolute;
     z-index: 1;
-    top: -67px;
+    top: -30px;
     left: 0;
     width: 100%;
-    height: 93px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
+    height: 33vw;
+    background: linear-gradient(176deg, rgb(254, 254, 254) 46%, rgb(242, 242, 242) 0%);
 
     @media (min-width: $tablet-width) {
-      top: -44px;
+      top: -35px;
+      height: 22vw;
     }
 
     @media (min-width: $desktop-width) {
-      top: 0;
+      top: -137px;
+      height: 38vw;
     }
   }
 }
 
 .price__list {
   margin-bottom: 40px;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     width: 620px;
