@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 45px;
+  padding-top: 94px;
+  padding-bottom: 47px;
   font-family: $font-base;
   background-color: $color-background-dark;
   overflow: hidden;
@@ -65,14 +65,14 @@
 
   @media (min-width: $tablet-width) {
     @include text-style-base(16px, 700, 30px, $color-text-light);
-    min-width: 155px;
+    min-width: 153px;
     height: 78px;
   }
 
   @media (min-width: $desktop-width) {
     @include text-style-base(18px, 700, 30px, $color-text-light);
     min-width: 236px;
-    height: 100px;
+    height: 98px;
   }
 
   &--hit {
@@ -143,7 +143,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 235px;
+    min-width: 233px;
     min-height: 60px;
   }
 }
@@ -157,12 +157,12 @@
   background-color: $color-background-light;
 
   @media (min-width: $tablet-width) {
-    height: 46px;
+    height: 45px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    height: 60px;
+    height: 59px;
   }
 }
 

@@ -59,6 +59,12 @@
   }
 }
 
+.page-header__logo-link {
+  @media (min-width: $desktop-width) {
+    min-height: 64px;
+  }
+}
+
 .page-header__logo-image {
   background-color: transparent;
   width: 75px;

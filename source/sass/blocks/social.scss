@@ -1,6 +1,10 @@
 .social {
   font-family: $font-base;
   background-color: $color-background-light;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+  }
 }
 
 .social__list {

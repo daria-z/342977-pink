@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 0;
-  padding-top: 18px;
+  padding-top: 20px;
   height: 100%;
   background-color: $color-background-dark;
 
@@ -12,13 +12,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    margin-top: 26px;
+    margin-top: 0;
     padding: 55px 20px 53px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $color-background-dark;
-    margin-top: 0;
     padding: 55px 60px 57px 80px;
     max-width: 940px;
   }
@@ -68,7 +67,7 @@
   width: auto;
   margin: 0;
   padding: 36px 0 30px;
-  min-height: 160px;
+  min-height: 156px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -275,7 +274,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 36px;
   padding-bottom: 40px;
   width: 100%;
   min-height: 200px;

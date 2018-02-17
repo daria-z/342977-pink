@@ -208,7 +208,6 @@
   }
 }
 
-
 .form__checkbox:checked + .form__checkbox-label {
   &::after {
     content: "";
@@ -293,6 +292,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 16px 18px;
     min-height: 129px;
   }
 
@@ -331,7 +331,7 @@
     flex-direction: row;
     justify-content: space-between;
     order: 6;
-    padding: 0 0 45px;
+    padding: 0 0 51px;
   }
 }
 

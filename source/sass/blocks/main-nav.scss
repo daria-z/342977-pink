@@ -55,7 +55,7 @@
     border: none;
 
     &:not(:last-of-type) {
-      margin-right: 56px;
+      margin-right: 60px;
     }
   }
 }
@@ -104,6 +104,10 @@
         height: 2px;
         background-color: $color-text-light;
       }
+    }
+
+    &--last {
+      padding-right: 0;
     }
   }
 }

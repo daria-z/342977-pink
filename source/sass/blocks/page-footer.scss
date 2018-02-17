@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 40px 20px;
+    padding: 35px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
 .page-footer__developed {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -101,6 +101,7 @@
 }
 
 .page-footer__academy-image {
+  margin-top: 9px;
   width: 40px;
   height: 41px;
   fill: $color-brand;

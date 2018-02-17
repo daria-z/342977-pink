@@ -34,7 +34,7 @@
 
   &--achievements {
     position: relative;
-    padding: 116px 0 38px;
+    padding: 119px 0 38px;
     background-color: $color-background-dark;
 
     @media (min-width: $tablet-width) {
@@ -45,7 +45,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 53px 63px 46px 60px;
+      padding: 50px 72px 43px 56px;
     }
   }
 
@@ -86,7 +86,7 @@
       flex-grow: 0;
       flex-shrink: 1;
       padding: 55px 51px 50px 55px;
-      width: auto;
+      width: 435px;
     }
   }
 
@@ -173,7 +173,7 @@
 
   &--achievements {
     position: absolute;
-    top: 35px;
+    top: 40px;
     max-width: 320px;
 
     @media (min-width: $tablet-width) {
