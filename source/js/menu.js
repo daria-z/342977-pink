@@ -6,6 +6,10 @@ var burger = document.querySelector(".page-header__icon--burger");
 var box = document.querySelector(".js-box");
 
 toggle.classList.add("page-header__toggle--show");
+menu.classList.add("main-nav--closed");
+header.classList.add("page-header__logo--closed");
+burger.classList.add("page-header__icon--show");
+box.classList.add("js-padding");
 
 toggle.addEventListener("click", function () {
   menu.classList.toggle("main-nav--closed");
