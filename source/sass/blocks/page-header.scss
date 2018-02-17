@@ -27,6 +27,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 7px 20px;
+  min-height: 69px;
   border-bottom: 1px solid $color-black;
   background-color: $color-secondary;
   cursor: pointer;
@@ -115,6 +116,7 @@
 }
 
 .page-header__toggle {
+  display: none;
   padding: 0;
   margin: 15px 0;
   height: 25px;
@@ -133,6 +135,14 @@
   &:active {
     fill: $color-brand;
     opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &--show {
+    display: block;
   }
 
   @media (min-width: $desktop-width) {

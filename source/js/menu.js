@@ -5,6 +5,8 @@ var cross = document.querySelector(".page-header__icon--cross");
 var burger = document.querySelector(".page-header__icon--burger");
 var box = document.querySelector(".js-box");
 
+toggle.classList.add("page-header__toggle--show");
+
 toggle.addEventListener("click", function () {
   menu.classList.toggle("main-nav--closed");
   header.classList.toggle("page-header__logo--closed");
